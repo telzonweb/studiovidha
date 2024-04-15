@@ -1,0 +1,256 @@
+/*3.1 hero-slider*/
+
+.hero-slider{
+	width: 100%;
+	height: 850px;
+	display: flex;
+	position: relative;
+	z-index: 0;
+
+    @media(max-width:991px){
+        height: 600px;
+    }
+    @media(max-width:767px){
+        height: 500px;
+    }
+
+	.swiper-slide {
+		overflow: hidden;
+	}
+
+	.swiper-container,
+	.hero-container {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+
+	.slide-inner,
+	.hero-inner {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 1;
+		background-size: cover;
+		background-position: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: left;
+
+		&:before {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: #000;
+			content: "";
+			opacity: .6;
+		}
+
+		.slide-content {
+			z-index: 11;
+			position: relative;
+
+			@media(max-width:767px) {
+				padding-bottom: 0;
+			}
+
+		}
+	}
+
+	// slider controls
+	.swiper-button-prev,
+	.swiper-button-next {
+		background: transparentize(#fff, 0.8);
+		width: 60px;
+		height: 60px;
+		line-height: 60px;
+		border: 2px solid #fff;
+		border-radius: 50%;
+		opacity: 0.7;
+		text-align: center;
+        transition: all .3s;
+
+		&:hover {
+			opacity: 0.9;
+		}
+
+        @media(max-width:767px){
+            display: none;
+        }
+
+		&:after{
+			display: none;
+		}
+	}
+
+	.swiper-button-prev {
+		left: 25px;
+
+		&:before {
+			font-family: "themify";
+			content: "\e629";
+			font-size: 20px;
+			color: #fff;
+		}
+	}
+
+	.swiper-button-next {
+		right: 25px;
+
+		&:before {
+			font-family: "themify";
+			content: "\e628";
+			font-size: 20px;
+			color: #fff;
+		}
+	}
+
+	.swiper-button-prev,
+	.swiper-button-next {
+        @media(max-width:991px){
+            display: none;
+        }
+	}
+
+	.swiper-pagination-bullet {
+		width: 12px;
+		height: 12px;
+		text-align: center;
+		line-height: 12px;
+		font-size: 12px;
+		color: #000;
+		opacity: 1;
+		background: rgba(255, 255, 255, 0.2);
+
+        @media(min-width:992px){
+            display: none;
+        }
+	}
+
+	.swiper-pagination-bullet-active {
+		color: #fff;
+		background: #fff;
+		width: 12px;
+		height: 12px;
+		text-align: center;
+		line-height: 12px;
+	}
+
+	.swiper-container-horizontal>.swiper-pagination-bullets,
+	.swiper-pagination-custom,
+	.swiper-pagination-fraction {
+		bottom: 30px;
+	}
+
+	.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+		margin: 0 8px;
+	}
+}
+
+
+.hero-slider {
+
+    @media(max-width:1199px){
+        height: 600px;
+    }
+
+    @media(max-width:991px){
+        height: 600px;
+    }
+
+    @media(max-width:767px){
+        height: 500px;
+    }
+
+
+	.swiper-slide {
+		position: relative;
+		z-index: 11;
+	}
+
+
+	.slide-title {
+		max-width: 930px;
+		margin: 0 auto;
+
+        @media(max-width:1199px){
+            max-width: 555px;
+        }
+
+		h2 {
+			font-weight: 400;
+			font-size: 100px;
+			line-height: 100px;
+			margin: 10px 0 15px;
+			color: #fff;
+			text-align: center;
+			margin-bottom: 30px;
+
+            @media(max-width:1199px){
+                font-size: 50px;
+            }
+            @media(max-width:991px){
+                font-size: 40px;
+                line-height: 55px;
+            }
+            @media(max-width:767px){
+                font-size: 30px;
+                line-height: 36px;
+            }
+		}
+	}
+
+	.slide-text {
+		max-width: 740px;
+		text-align: center;
+		margin: 0 auto;
+
+        @media(max-width:991px){
+            max-width: 500px;
+        }
+
+		p {
+			color: #fff;
+			font-weight: 500;
+			font-size: 20px;
+			line-height: 30px;
+			margin-bottom: 40px;
+			color: #e2e2e2;
+			text-align: center;
+
+            @media(max-width:991px){
+                font-size: 18px;
+            }
+            @media(max-width:767px){
+                font-size: 16px;
+                line-height: 22px;
+                margin-bottom: 30px;
+            }
+		}
+	}
+
+
+	.slide-btns {
+		text-align: center;
+		margin: 0 auto;
+
+        @media(max-width:991px){
+            max-width: 400px;
+        }
+
+		.theme-btn {
+			border-radius: 0;
+			font-weight: 600;
+			font-size: 18px;
+			color: #fff;
+		}
+	}
+
+}
