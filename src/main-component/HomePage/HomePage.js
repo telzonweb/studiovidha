@@ -14,6 +14,7 @@ import FunFact from "../../components/FunFact";
 import FaqSection from "../../components/FaqSection/FaqSection";
 import ContactSection from "../../components/ContactSection/ContactSection";
 import Footer from "../../components/footer/Footer";
+import YtGrid from "../../components/YTGrid/YtGrid";
 
 const HomePage = () => {
   return (
@@ -22,7 +23,8 @@ const HomePage = () => {
       <Hero />
       <About />
       <ServiceSection ptClass={"pt-250"} />
-      <VideoSection />
+      {/* <VideoSection /> */}
+      <YtGrid />
       <PartnerSection />
       <ResturantSec />
       <ProjectSection />
