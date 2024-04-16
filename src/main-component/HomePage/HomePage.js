@@ -30,7 +30,7 @@ const HomePage = () => {
       <ProjectSection />
       <FunFact />
       <FaqSection />
-      <ContactSection />
+      {/* <ContactSection /> */}
       <Footer />
       <Scrollbar />
     </Fragment>
