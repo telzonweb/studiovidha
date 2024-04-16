@@ -5,6 +5,10 @@ const CtaSection = (props) => {
     e.preventDefault();
   };
 
+  const redirectToWhatsapp = () => {
+    window.location.href = "https://api.whatsapp.com/send?phone=123456789";
+  };
+
   return (
     <section className="call-action">
       <div className="container">
