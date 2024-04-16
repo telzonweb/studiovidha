@@ -1,7 +1,7 @@
 import React from "react";
 import Bg from "../../images/team/abt-1.png";
-import abimg1 from "../../images/wp/wp-1.png";
-import abimg2 from "../../images/wp/wp-2.png";
+import abimg1 from "../../images/mainUpload/home/home01.jpg";
+import abimg2 from "../../images/mainUpload/home/home02.jpg";
 import abimg3 from "../../images/team/abt-3.png";
 
 const About = (props) => {
