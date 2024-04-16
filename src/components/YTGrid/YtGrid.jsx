@@ -3,11 +3,14 @@ import React from "react";
 const YtGrid = () => {
   return (
     <>
-      <div style={{ textAlign: "center" }}>
-        <h2>Video Gallery</h2>
+      <div className="section-title mb-75 text-center">
+        <h2>
+          Video <span className="thin">Gallery</span>
+        </h2>
+        <p>See our latest Work</p>
       </div>
       <div className="video-gallery">
-        <div className="ytiframe">
+        <div className="ytiframe mb-20 ">
           <iframe
             width="560"
             height="315"
@@ -19,7 +22,7 @@ const YtGrid = () => {
             allowfullscreen
           ></iframe>
         </div>
-        <div className="ytiframe">
+        <div className="ytiframe mb-20">
           <iframe
             width="560"
             height="315"
@@ -31,7 +34,7 @@ const YtGrid = () => {
             allowfullscreen
           ></iframe>
         </div>
-        <div className="ytiframe">
+        <div className="ytiframe mb-20">
           <iframe
             width="560"
             height="315"
@@ -43,7 +46,7 @@ const YtGrid = () => {
             allowfullscreen
           ></iframe>
         </div>
-        <div className="ytiframe">
+        <div className="ytiframe mb-20">
           <iframe
             width="560"
             height="315"
