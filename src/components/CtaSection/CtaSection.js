@@ -5,6 +5,9 @@ const CtaSection = (props) => {
     const SubmitHandler = (e) => {
         e.preventDefault()
     }
+    const redirectToWhatsapp = () => {
+        window.location.href = 'https://api.whatsapp.com/send?phone=123456789';
+      };
 
     return (
         <section className="call-action">
@@ -18,10 +21,10 @@ const CtaSection = (props) => {
                         </div>
                         </div>
                         <div className="col-lg-6">
-                            <form onSubmit={SubmitHandler} className="subscribe">
-                                <input type="email" placeholder="enter your mail" required/>
-                                <button type="submit" className="theme-btn style-two">subscribe</button>
-                            </form>
+                            {/* <form onSubmit={SubmitHandler} className="subscribe"> */}
+                                {/* <input type="email" placeholder="enter your mail" required/> */}
+                                <button style={{marginLeft: '50%' }} onClick={redirectToWhatsapp} className="theme-btn style-two">Click Me!</button>
+                            {/* </form> */}
                         </div>
                     </div>
                 </div>
