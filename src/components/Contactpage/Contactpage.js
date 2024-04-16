@@ -36,7 +36,7 @@ const Contactpage = () => {
                     </div>
                 </div>
             </div>
-            <ContactForm/>
+            {/* <ContactForm/> */}
         </div>
     )
 

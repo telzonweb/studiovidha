@@ -1,8 +1,8 @@
 import React from 'react'
 import Bg from '../../images/team/team-bg.png'
-import team1 from '../../images/team/team1.png'
-import team2 from '../../images/team/team2.png'
-import team3 from '../../images/team/team3.png'
+import team1 from '../../images/team/team-1.png'
+import team2 from '../../images/team/team-2.png'
+import team3 from '../../images/team/team-3.png'
 
 
 const TeamSection = (props) => {

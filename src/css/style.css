@@ -484,7 +484,7 @@ input[type="submit"]:focus {
 /******************** 03. Page Banner ***************** */
 /****************************************************** */
 .banner-section {
-  background: url(../images/banner.png);
+  background: url(../images/team/abt-1.png);
   background-size: cover;
   display: flex;
 }
@@ -623,7 +623,7 @@ input[type="submit"]:focus {
   min-height: 600px;
   position: relative;
   height: calc(100% - 100px);
-  background: url("../images/wp/about.png") no-repeat center/cover;
+  background: url("../images/team/abt-2.png") no-repeat center/cover;
 }
 
 .about-image:before {

@@ -1,5 +1,5 @@
 import React from 'react'
-import abimg from '../../images/wp/wp-3.png'
+import abimg from '../../images/team/abt-3.png'
 
 
 const About2 = (props) => {

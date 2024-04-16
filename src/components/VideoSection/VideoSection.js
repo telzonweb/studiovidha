@@ -1,5 +1,5 @@
 import React from 'react'
-import abimg1 from '../../images/video/video-image.png'
+import abimg1 from '../../images/team/video-image.png'
 import VideoModal from '../ModalVideo';
 
 
