@@ -46,7 +46,7 @@ const Footer = (props) => {
                 width={150}
                 src="https://www.telzonmarketing.in/images/main/telzonlogo.png"
               />
-              <p>
+              <p style={{color:'white'}}>
                 At Telzon Marketing, we're masters at making your brand shine.
                 We create content that tells your story in a way that everyone
                 remembers. We're young, full of energy, and passionate about
@@ -70,10 +70,10 @@ const Footer = (props) => {
             <div className="col-xl-6 col-lg-4">
               <div className="contact-widget">
                 <h3>Contact</h3>
-                <h6>+91 9307189776</h6>
-                <h6>info@telzonmarketing.in</h6>
-                <h6>Manish Nagar, Nagpur, Maharashtra 440037</h6>
-                <h6>Kothrud, Pune 411038</h6>
+                <p style={{color:'white'}}>+91 9307189776</p>
+                <p style={{color:'white'}}>info@telzonmarketing.in</p>
+                <p style={{color:'white'}}>Manish Nagar, Nagpur, Maharashtra 440037</p>
+                <p style={{color:'white'}}>Kothrud, Pune 411038</p>
               </div>
             </div>
           </div>
