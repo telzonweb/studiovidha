@@ -790,7 +790,7 @@ input[type="submit"]:focus {
 /*************** 08. Rastaurant Section  ************** */
 /****************************************************** */
 .rastaurant-left {
-  background: url("../images/restaurants/left.png") no-repeat center/cover;
+  background: url("../images/mainUpload/home/img1.jpg") no-repeat center/cover;
   min-height: 500px;
   height: 100%;
 }
