@@ -8,6 +8,8 @@ import ServiceSection from '../../components/ServiceSection/ServiceSection';
 import FunFact from '../../components/FunFact';
 import TeamSection from '../../components/TeamSection/TeamSection';
 import VideoSection from '../../components/VideoSection/VideoSection';
+import Paragraph from '../../components/Paragraph';
+
 
 const AboutPage = () => {
     return (
@@ -17,8 +19,9 @@ const AboutPage = () => {
             <ServiceSection ptClass={'pt-100'}/>
             <About2 />
             <FunFact fClass={'style-two pt-165 pb-125 mb-0'}/>
-            <TeamSection/>
-            <VideoSection />
+            <Paragraph/>
+            {/* <TeamSection/> */}
+            {/* <VideoSection /> */}
             <Footer />
             <Scrollbar />
         </Fragment>
