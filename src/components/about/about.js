@@ -9,7 +9,7 @@ const About = (props) => {
     <section
       id="about"
       className="wp-section pt-150 rmb-100"
-      style={{ backgroundImage: `url(${Bg})` }}
+      // style={{ backgroundImage: `url(${Bg})` }}
     >
       <div className="container">
         <div className="row align-items-center">
