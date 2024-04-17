@@ -1,11 +1,11 @@
-import pImg1 from '../images/apartment/apartment1.png'
-import pImg2 from '../images/apartment/apartment2.png'
-import pImg3 from '../images/apartment/apartment3.png'
+import pImg1 from '../images/portfolio/apartment1.png'
+import pImg2 from '../images/portfolio/apartment2.png'
+import pImg3 from '../images/portfolio/apartment3.png'
 
 
-import pSImg1 from '../images/apartment/apartment1.png'
-import pSImg2 from '../images/apartment/apartment2.png'
-import pSImg3 from '../images/apartment/apartment3.png'
+import pSImg1 from '../images/portfolio/apartment1.png'
+import pSImg2 from '../images/portfolio/apartment2.png'
+import pSImg3 from '../images/portfolio/apartment3.png'
 
 import sIcon1 from '../images/apartment/icon1.png'
 import sIcon2 from '../images/apartment/icon2.png'
