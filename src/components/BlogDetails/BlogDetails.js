@@ -25,7 +25,7 @@ const BlogSingle = (props) => {
       // const res = await fetch("http://localhost:5173/api/post/getPosts");
       const res = await fetch(
         // `${domain}/api/post/getposts?slug=${params.blogDetailsId}`
-        `${domain}/api/post/getposts?slug=${params.blogDetailsId}`
+        `${domain}/api/post/getposts?slug=${slug}`
       );
 
       const data = await res.json();
@@ -35,17 +35,17 @@ const BlogSingle = (props) => {
     getBlog();
   }, []);
 
-  useEffect(() => {
-    async function getRelatedBlogs() {
-      // const res = await fetch("http://localhost:5173/api/post/getPosts");
-      const res = await fetch(`${domain}/api/post/getposts?limit=3`);
+  // useEffect(() => {
+  //   async function getRelatedBlogs() {
+  //     // const res = await fetch("http://localhost:5173/api/post/getPosts");
+  //     const res = await fetch(`${domain}/api/post/getposts?limit=3`);
 
-      const data = await res.json();
-      // console.log(data.posts);
-      setRelatedPost(data.posts);
-    }
-    getRelatedBlogs();
-  }, []);
+  //     const data = await res.json();
+  //     // console.log(data.posts);
+  //     setRelatedPost(data.posts);
+  //   }
+  //   getRelatedBlogs();
+  // }, []);
   const BlogDetails = blogs.find((item) => item.slug === slug);
 
   const submitHandler = (e) => {
@@ -57,12 +57,12 @@ const BlogSingle = (props) => {
       {console.log(post)}
       {/* {console.log(relatedPost)} */}
       <div className="container">
+        <h3 className="blog-title">{post?.title}</h3>
+        <span className="date">{new Date(post.createdAt).toDateString()}</span>
         <div className="blog-image">
-          <img src={BlogDetails?.blogSingleImg} alt="Blog" />
-          <span className="date">11 Nov 2020</span>
+          <img src={post?.image} alt="Blog" />
         </div>
-        <h3 className="blog-title">{BlogDetails?.title}</h3>
-        <ul className="admin-header">
+        {/* <ul className="admin-header">
           <li>
             <i className="fa fa-user"></i>By {BlogDetails?.authorTitle}
           </li>
@@ -72,8 +72,13 @@ const BlogSingle = (props) => {
           <li>
             <i className="fa fa-home"></i>Residence
           </li>
-        </ul>
-        <p>
+        </ul> */}
+        <div
+          className="p-3 max-w-2xl mx-auto w-full post-content"
+          dangerouslySetInnerHTML={{ __html: post.content }}
+        ></div>
+
+        {/* <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -114,15 +119,15 @@ const BlogSingle = (props) => {
           quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam
           eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
           voluptatem.
-        </p>
-        <div className="row mt-65">
+        </p> */}
+        {/* <div className="row mt-65">
           <div className="col-md-6 mb-40">
             <img src={bImg1} alt="Blog Single" />
           </div>
           <div className="col-md-6 mb-40">
             <img src={bImg2} alt="Blog Single" />
           </div>
-        </div>
+        </div> */}
         {/* <div className="blog-share mb-65">
           <div className="social-icons">
             <span className="social-title">Share</span>
