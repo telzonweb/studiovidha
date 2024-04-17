@@ -43,7 +43,7 @@ console.log(portfolioData)
                         src={portfolio.image}
                         alt="Description of the image"
                       />
-                      <h3>{portfolio.title}</h3>
+                      <h3 className="pt-4">{portfolio.title}</h3>
                     </div>
                     </Link>
                   </div>
