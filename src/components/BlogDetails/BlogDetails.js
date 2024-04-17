@@ -1,13 +1,51 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import blogs from "../../api/blogs";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import bImg1 from "../../images/blog/2.jpg";
 import bImg2 from "../../images/blog/3.jpg";
+import { domain } from "../../domain";
 
 const BlogSingle = (props) => {
   const { slug } = useParams();
+  const [post, setPost] = useState({});
+  const [relatedPost, setRelatedPost] = useState([]);
 
+  const [date, setDate] = useState("");
+  const [time, setTime] = useState("");
+  const params = useParams();
+  // pageTitle("Blog Details");
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    async function getBlog() {
+      // const res = await fetch("http://localhost:5173/api/post/getPosts");
+      const res = await fetch(
+        // `${domain}/api/post/getposts?slug=${params.blogDetailsId}`
+        `${domain}/api/post/getposts?slug=${params.blogDetailsId}`
+      );
+
+      const data = await res.json();
+      // console.log(data.posts);
+      setPost(data.posts[0]);
+    }
+    getBlog();
+  }, []);
+
+  useEffect(() => {
+    async function getRelatedBlogs() {
+      // const res = await fetch("http://localhost:5173/api/post/getPosts");
+      const res = await fetch(`${domain}/api/post/getposts?limit=3`);
+
+      const data = await res.json();
+      // console.log(data.posts);
+      setRelatedPost(data.posts);
+    }
+    getRelatedBlogs();
+  }, []);
   const BlogDetails = blogs.find((item) => item.slug === slug);
 
   const submitHandler = (e) => {
@@ -16,6 +54,8 @@ const BlogSingle = (props) => {
 
   return (
     <section className="blog-single mt-150 mb-50">
+      {console.log(post)}
+      {/* {console.log(relatedPost)} */}
       <div className="container">
         <div className="blog-image">
           <img src={BlogDetails?.blogSingleImg} alt="Blog" />
