@@ -26,13 +26,14 @@ const About = (props) => {
           <div className="col-lg-5">
             <div className="wp-content ml-50 rml-0 rpt-30">
               <div className="section-title mb-10">
-                <h6>BEST ARCHITECT</h6>
+                <h6>BEST in class</h6>
                 <h2>
-                  Top Architecture <br />
-                  <span> & interior</span> <br />
-                  <span className="thin">designing Agency</span>
+                  The most promising Architecture
+                  <br />
+                  <span> & Interior</span> <br />
+                  <span className="thin">Designing Firm</span>
                 </h2>
-                <h6>welcome to StudioVida</h6>
+                <h6>Welcome to Studio Vidha</h6>
               </div>
               <img src={abimg3} alt="" />
             </div>
