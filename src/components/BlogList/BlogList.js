@@ -55,7 +55,10 @@ const BlogList = (props) => {
               <div className="blog-item" key={bitem}>
                 <div className="blog-image">
                   <img src={blog.image} alt="Blog Image" />
-                  <span className="date">{blog.create_at}</span>
+                  {/* <p>{console.log(new Date(blog.createdAt).toDateString())}</p> */}
+                  <span className="date">
+                    {new Date(blog.createdAt).toDateString()}
+                  </span>
                 </div>
                 <div className="blog-content">
                   <h3>
@@ -66,7 +69,7 @@ const BlogList = (props) => {
                       {blog.title}
                     </Link>
                   </h3>
-                  <ul className="admin-header">
+                  {/* <ul className="admin-header">
                     <li>
                       <i className="fa fa-user"></i>
                       <Link
@@ -94,7 +97,7 @@ const BlogList = (props) => {
                         Residence
                       </Link>
                     </li>
-                  </ul>
+                  </ul> */}
                   <p>{blog.description}</p>
                   <Link
                     onClick={ClickHandler}
