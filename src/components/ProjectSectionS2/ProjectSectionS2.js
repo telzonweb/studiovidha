@@ -1,7 +1,5 @@
-import React, { useState } from "react";
-import Projects from "../../api/Projects";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
 import { BASEURL } from "../../Constant";
 
 const ProjectSectionS2 = (props) => {
@@ -20,7 +18,7 @@ const ProjectSectionS2 = (props) => {
     }
     getPortfolio();
   }, []);
-console.log(portfolioData)
+
   return (
     <section className="apartment-section s2 text-center">
       <div className="container">
@@ -32,25 +30,17 @@ console.log(portfolioData)
         </div>
         <div className="apartment-carousel">
           <div className="row">
-            {/* First project */}
-            {
-                portfolioData.map((portfolio)=>(
-                    <div key={portfolio._id} className="col-lg-4 col-md-6">
-                        <Link to={portfolio.slug}>
-                        
-                    <div className="mb-4">
-                      <img
-                        src={portfolio.image}
-                        alt="Description of the image"
-                      />
-                      <h3 className="pt-4">{portfolio.title}</h3>
-                    </div>
-                    </Link>
+            {/* Map through portfolio data */}
+            {portfolioData.map((portfolio) => (
+              <div key={portfolio._id} className="col-lg-6 col-md-6 mb-4">
+                <Link to={portfolio.slug}>
+                  <div>
+                    <img src={portfolio.image} alt="Description of the image" />
+                    <h3 className="pt-4">{portfolio.title}</h3>
                   </div>
-                ))
-            }
-           
-           
+                </Link>
+              </div>
+            ))}
           </div>
         </div>
       </div>
