@@ -25,13 +25,14 @@ console.log(portfolioDetails)
     return (
         <Fragment>
             <Navbar />
-            <PageTitle pageTitle={portfolioDetails.title} pagesub={'Project'} />
+            <PageTitle pageTitle={"Portfolio Details"} pagesub={'Project'} />
             <div className="project-single-area section-padding">
                 <div className="property-single mt-150">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
-                                <img src={portfolioDetails.image}/>
+                                
+                            <img height={500} style={{width: '100%'}} src={portfolioDetails.image} />
                             <div
                     className="p-3 max-w-2xl mx-auto w-full post-content"
                     dangerouslySetInnerHTML={{ __html: portfolioDetails.content }}
