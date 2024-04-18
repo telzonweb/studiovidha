@@ -43,16 +43,37 @@ const BlogList = (props) => {
         <div className="row text-center">
           <div className="row">
             {posts.map((blog, bitem) => (
-              <div key={bitem} className="col-lg-4 col-md-6 mb-4">
+              // <div key={bitem} className="col-lg-4 col-md-6 mb-4">
                 
-                <div className="blog-item" >
+              //   <div className="blog-item" >
+              //   <div className="blog-image">
+              //     <img src={blog.image} alt="Blog Image" />
+              //     <span className="date">
+              //       {new Date(blog.createdAt).toDateString()}
+              //     </span>
+              //   </div>
+              //   <div className="blog-content">
+              //     <h3>
+              //       <Link onClick={ClickHandler} to={`/blog-single/${blog.slug}`}>
+              //         {blog.title}
+              //       </Link>
+              //     </h3>
+              //     <p>{blog.description}</p>
+              //     <Link onClick={ClickHandler} to={`/blog-single/${blog.slug}`} className="read-more">
+              //       Read More
+              //     </Link>
+              //   </div>
+              // </div>
+              //   </div>
+              <div key={bitem} className="col-lg-4 col-md-6 mb-4">
+              <div className="blog-item border rounded shadow">
                 <div className="blog-image">
-                  <img src={blog.image} alt="Blog Image" />
+                  <img src={blog.image}  height={450} style={{width: '100%'}} alt="Blog Image" />
                   <span className="date">
                     {new Date(blog.createdAt).toDateString()}
                   </span>
                 </div>
-                <div className="blog-content">
+                <div className="blog-content p-3">
                   <h3>
                     <Link onClick={ClickHandler} to={`/blog-single/${blog.slug}`}>
                       {blog.title}
@@ -64,8 +85,8 @@ const BlogList = (props) => {
                   </Link>
                 </div>
               </div>
-                </div>
-             
+            </div>
+            
             ))}
           </div>
         </div>

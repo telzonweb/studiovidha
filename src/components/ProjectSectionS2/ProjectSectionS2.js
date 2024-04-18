@@ -33,12 +33,14 @@ const ProjectSectionS2 = (props) => {
             {/* Map through portfolio data */}
             {portfolioData.map((portfolio) => (
               <div key={portfolio._id} className="col-lg-6 col-md-6 mb-4">
-                <Link to={portfolio.slug}>
-                  <div>
-                    <img src={portfolio.image} alt="Description of the image" />
+             <div>
+             <Link  to={portfolio.slug}>
+                  <div className="blog-item border rounded shadow pb-5">
+                    <img src={portfolio.image} height={500} style={{width: '100%'}} alt="Description of the image" />
                     <h3 className="pt-4">{portfolio.title}</h3>
                   </div>
                 </Link>
+             </div>
               </div>
             ))}
           </div>
