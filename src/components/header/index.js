@@ -61,6 +61,7 @@ const Header = (props) => {
                 </Link>
               </li>
             </ul>
+            <MobileMenu />
             {/* <div className="languages">
               <select name="languages" id="languages">
                 <option value="lang-1">English</option>
