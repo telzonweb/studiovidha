@@ -23,7 +23,12 @@ const Header = (props) => {
             <div className="logo-outer">
               <div className="logo">
                 <Link onClick={ClickHandler} to="/">
-                  <img src={Logo} alt="Logo" />
+                  {/* <img src={Logo} alt="Logo" /> */}
+                  <img
+                    src="/images/studiovidhaLogo.png"
+                    alt="Logo"
+                    height="70px"
+                  />
                 </Link>
               </div>
             </div>

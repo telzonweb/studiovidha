@@ -16,7 +16,7 @@ const About = (props) => {
           <div className="col-lg-7">
             <div className="wp-images rmb-150">
               <div className="experience-year">
-                <span className="number">25</span>
+                <span className="number">25+</span>
                 <h4>Years of Experience</h4>
               </div>
               <img src={abimg1} alt="Wordpress" />

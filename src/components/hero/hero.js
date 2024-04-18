@@ -10,8 +10,8 @@ const Hero = () => {
     >
       <div className="container">
         <div className="hero-content">
-          {/* <h1 className="text-bold text-white">Let Your Home Be</h1> */}
-          {/* <h1 className="text-lighter">Unique and Stylish</h1> */}
+          <h1 className="text-bold text-white">Let Your Home Be</h1>
+          <h1 className="text-lighter">Unique and Stylish</h1>
           <AnchorLink href="#about" className="scroll-down scroll">
             <div className="scroll-box"></div>
           </AnchorLink>
