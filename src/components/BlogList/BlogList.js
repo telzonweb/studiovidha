@@ -20,6 +20,7 @@ const BlogList = (props) => {
           `${domain}/api/post/getposts?startIndex=${pageNo * 6}&limit=6`
         );
         data = await res.json();
+        console.log(data)
       } else {
         const res = await fetch(`${domain}/api/post/getposts?limit=6`);
         data = await res.json();
@@ -40,7 +41,7 @@ const BlogList = (props) => {
   return (
     <section className="blog-list mt-150 mb-50">
       <div className="container">
-        <div className="row text-center">
+        <div className=" text-center">
           <div className="row">
             {posts.map((blog, bitem) => (
               // <div key={bitem} className="col-lg-4 col-md-6 mb-4">
