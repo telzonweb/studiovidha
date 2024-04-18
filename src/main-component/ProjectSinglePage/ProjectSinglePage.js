@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useEffect, useState } from 'react';
 import Navbar from '../../components/Navbar/Navbar';
 import PageTitle from '../../components/pagetitle/PageTitle'
 import Scrollbar from '../../components/scrollbar/scrollbar'
@@ -6,51 +6,40 @@ import { useParams } from 'react-router-dom'
 import Project from '../../api/Projects';
 import Plans from './Plans';
 import Footer from '../../components/footer/Footer';
-
+import { BASEURL } from '../../Constant';
 const ProjectSinglePage = (props) => {
     const { slug } = useParams()
-
-    const projectDetails = Project.find(item => item.slug === slug)
+    const[portfolioDetails,setPortfolioDetails] = useState([])
+const fetchPrortfolioDetails = async () =>{
+const data = await fetch(`${BASEURL}/api/post/getposts?category=portfolio&slug=${slug}`);
+const res = await data.json()
+setPortfolioDetails(res.posts[0])
+}
+console.log(portfolioDetails)
+// /api/post/getposts?category=portfolio
+    useEffect(()=>{
+        fetchPrortfolioDetails()
+    },[slug])
+    // const projectDetails = Project.find(item => item.slug === slug)
 
     return (
         <Fragment>
             <Navbar />
-            <PageTitle pageTitle={projectDetails.pTitle} pagesub={'Project'} />
+            <PageTitle pageTitle={portfolioDetails.title} pagesub={'Project'} />
             <div className="project-single-area section-padding">
                 <div className="property-single mt-150">
                     <div className="container">
                         <div className="row">
-                            <div className="col-lg-7">
-                                <div className="property-single-left">
-                                    <div className="property-left-content">
-                                        <h3>Morbi nulla felis, auctor quis urna blandit, <span className="font-weight-light">aliquet tristique elit</span></h3>
-                                        <ul>
-                                            <li>wellnes & spa</li>
-                                            <li>conference</li>
-                                            <li>restaurant</li>
-                                            <li>fitness</li>
-                                            <li>library</li>
-                                            <li>bars</li>
-                                            <li>wellnes & spa</li>
-                                            <li>conference</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-5">
-                                <div className="property-single-right">
-                                    <div className="property-right-content pl-40 rpl-0">
-                                        <h3 className="border-text">Project complex</h3>
-                                        <h3>Project Park</h3>
-                                        <h3>Project gallery</h3>
-                                        <h3>Hospital</h3>
-                                    </div>
-                                </div>
+                            <div className="col-lg-12">
+                                <img src={portfolioDetails.image}/>
+                            <div
+                    className="p-3 max-w-2xl mx-auto w-full post-content"
+                    dangerouslySetInnerHTML={{ __html: portfolioDetails.content }}
+                  ></div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <Plans/>
             </div>
             <Footer/>
             <Scrollbar />
