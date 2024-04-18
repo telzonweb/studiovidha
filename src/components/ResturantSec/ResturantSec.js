@@ -13,10 +13,16 @@ const ResturantSec = (props) => {
               <div className="ras-content pl-70">
                 <h2 className="border-text">Projects</h2>
                 <h2 className="text-white">
-                  Apartments
+                  Residentials
                   <br />
-                  Shopping Mall
-                  <br /> Hospital
+                  Shops
+                  <br /> Restaurants
+                  <br />
+                  Offices
+                  <br />
+                  Farmhouses
+                  <br />
+                  Commercials
                 </h2>
               </div>
             </div>

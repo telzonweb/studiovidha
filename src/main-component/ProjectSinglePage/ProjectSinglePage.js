@@ -27,8 +27,10 @@ const ProjectSinglePage = (props) => {
   return (
     <Fragment>
       <Navbar />
-      <PageTitle pageTitle={portfolioDetails.title} pagesub={"Project"} />
+      {/* <PageTitle pageTitle={portfolioDetails.title} pagesub={"Project"} /> */}
+      <PageTitle pagesub={"Project"} />
       <div className="project-single-area section-padding">
+        <h3>{portfolioDetails.title}</h3>
         <div className="property-single mt-150">
           <div className="container">
             <div className="row">
