@@ -21,7 +21,7 @@ const Services = [
     sImg: simg,
     sSimg: sSimg1,
     sTitle: "Architecture Design",
-    slug: "Design-&-Planning",
+    slug: "architecture-design",
     description:
       "Noimy donecing and vivamus vitae commodo. Ut purus ornare laoreet ultrices are sitac",
     des2: "Elementum aliquam byuerirra sagittis duis non quis.",
@@ -34,65 +34,13 @@ const Services = [
     sImg: simg2,
     sSimg: sSimg2,
     sTitle: "Interior Design",
-    slug: "Custom-Solutions",
+    slug: "interior-design",
     description:
       "Noimy donecing and vivamus vitae commodo. Ut purus ornare laoreet ultrices are sitac",
     des2: "Elementum aliquam byuerirra sagittis duis non quis.",
     des3: "One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy the activities",
     ssImg1: sSingleimg1,
     ssImg2: sSingleimg2,
-  },
-  {
-    Id: "3",
-    sImg: simg3,
-    sSimg: sSimg3,
-    sTitle: "Landscape Design",
-    slug: "Furniture-&-Decor",
-    description:
-      "Noimy donecing and vivamus vitae commodo. Ut purus ornare laoreet ultrices are sitac",
-    des2: "Elementum aliquam byuerirra sagittis duis non quis.",
-    des3: "One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy the activities",
-    ssImg1: sSingleimg1,
-    ssImg2: sSingleimg2,
-  },
-  // {
-  //   Id: "4",
-  //   sImg: simg4,
-  //   sSimg: sSimg4,
-  //   sTitle: "Exterior Design",
-  //   slug: "Exterior-Design",
-  //   description:
-  //     "Noimy donecing and vivamus vitae commodo. Ut purus ornare laoreet ultrices are sitac",
-  //   des2: "Elementum aliquam byuerirra sagittis duis non quis.",
-  //   des3: "One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy the activities",
-  //   ssImg1: sSingleimg1,
-  //   ssImg2: sSingleimg2,
-  // },
-  // {
-  //   Id: "5",
-  //   sImg: simg5,
-  //   sSimg: sSimg5,
-  //   sTitle: "Interior Design",
-  //   slug: "Interior-Design",
-  //   description:
-  //     "Noimy donecing and vivamus vitae commodo. Ut purus ornare laoreet ultrices are sitac",
-  //   des2: "Elementum aliquam byuerirra sagittis duis non quis.",
-  //   des3: "One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy the activities",
-  //   ssImg1: sSingleimg1,
-  //   ssImg2: sSingleimg2,
-  // },
-  // {
-  //   Id: "6",
-  //   sImg: simg6,
-  //   sSimg: sSimg6,
-  //   sTitle: "Concept Planning",
-  //   slug: "Concept-Planning",
-  //   description:
-  //     "Noimy donecing and vivamus vitae commodo. Ut purus ornare laoreet ultrices are sitac",
-  //   des2: "Elementum aliquam byuerirra sagittis duis non quis.",
-  //   des3: "One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy the activities",
-  //   ssImg1: sSingleimg1,
-  //   ssImg2: sSingleimg2,
-  // },
+  }
 ];
 export default Services;

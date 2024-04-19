@@ -44,6 +44,14 @@ const Header = (props) => {
               </li>
               <li>
                 {/* <i className="fa fa-map-marker"></i> */}
+                <Link onClick={ClickHandler} to="/services">
+                  <h6>
+                    <span>Services</span>
+                  </h6>
+                </Link>
+              </li>
+              <li>
+                {/* <i className="fa fa-map-marker"></i> */}
                 <Link onClick={ClickHandler} to="/property">
                   <h6>
                     <span>Portfolio</span>
