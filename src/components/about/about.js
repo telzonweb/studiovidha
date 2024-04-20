@@ -19,8 +19,8 @@ const About = (props) => {
                 <span className="number">25+</span>
                 <h4>Years of Experience</h4>
               </div>
-              <img src={abimg1} alt="Wordpress" />
-              <img src={abimg2} alt="Wordpress" />
+              <img src="images/home/home02_Back.webp" alt="Wordpress" />
+              <img src="images/home/home02_Front.webp" alt="Wordpress" />
             </div>
           </div>
           <div className="col-lg-5">

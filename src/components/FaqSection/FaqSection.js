@@ -22,8 +22,10 @@ const FaqSection = (props) => {
     <section className="faq-section">
       <div className="container-fluid">
         <div className="row">
-          <div className="col-lg-6 pr-125 rpr-15">
-            <div className="faq-left-image"></div>
+          <div className="col-lg-6 pr-125 rpr-15 pt-100">
+            <div className="">
+              <img src="images/home/home07_process.webp" alt="FAQ" />
+            </div>
           </div>
           <div className="col-lg-6 pl-0">
             <div className="faq-accordion ras-content pt-95 pb-110 rpb-0 rmb-100">
@@ -104,9 +106,9 @@ const FaqSection = (props) => {
                 </Accordion>
               </div>
             </div>
-            <div className="faq-right-bg">
-              <img src={fImg} alt="FAQ" />
-            </div>
+            {/* <div className="faq-right-bg">
+              <img src="images/home/home07_DisignProcess.webp" alt="FAQ" />
+            </div> */}
           </div>
         </div>
       </div>
