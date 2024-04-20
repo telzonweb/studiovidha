@@ -44,13 +44,14 @@ const Footer = (props) => {
               <img
                 height={100}
                 width={150}
-                src="https://www.telzonmarketing.in/images/main/telzonlogo.png"
+                src="studiovidhaLogo.png"
+                alt="logo"
               />
-              <p style={{color:'white'}}>
-                At Telzon Marketing, we're masters at making your brand shine.
-                We create content that tells your story in a way that everyone
-                remembers. We're young, full of energy, and passionate about
-                what we do.
+              <p style={{ color: "white" }}>
+                A studio specializing in Architecture and Interior Designing,
+                adopting the title 'Vidha' not only reflects our cultural roots
+                but also accentuates our identity and purpose within the
+                architectural realm.
               </p>
               <div className="social-icons">
                 <Link onClick={ClickHandler} to="/">
@@ -70,10 +71,11 @@ const Footer = (props) => {
             <div className="col-xl-6 col-lg-4">
               <div className="contact-widget">
                 <h3>Contact</h3>
-                <p style={{color:'white'}}>+91 9307189776</p>
-                <p style={{color:'white'}}>info@telzonmarketing.in</p>
-                <p style={{color:'white'}}>Manish Nagar, Nagpur, Maharashtra 440037</p>
-                <p style={{color:'white'}}>Kothrud, Pune 411038</p>
+                <p style={{ color: "white" }}>+91 9881102067</p>
+                <p style={{ color: "white" }}>studiovidha@gmail.com</p>
+                <p style={{ color: "white" }}>
+                  202, Chhatrapati Nagar, Ring Road, Nagpur-440015
+                </p>
               </div>
             </div>
           </div>

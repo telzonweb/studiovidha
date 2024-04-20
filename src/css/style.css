@@ -44,6 +44,7 @@
 
 body {
   color: #5f5c5c;
+  background-color: #fff9ec;
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
@@ -70,7 +71,7 @@ a:visited {
 }
 
 a:hover {
-  color: #ca9c6a;
+  color: #9f513b;
   text-decoration: none;
 }
 
@@ -159,7 +160,7 @@ footer:after {
 }
 
 .section-title h6:first-child {
-  color: #ca9c6a;
+  color: #9f513b;
 }
 
 .section-title h2 {
@@ -184,7 +185,7 @@ footer:after {
 
 .section-title h2 span,
 .section-title.text-white h2 span {
-  color: #ca9c6a;
+  color: #9f513b;
 }
 
 /** Button style one */
@@ -197,7 +198,7 @@ a.theme-btn {
   transition: 0.5s;
   min-width: 175px;
   padding: 17px 35px;
-  background: #ca9c6a;
+  background: #9f513b;
   display: inline-block;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -258,7 +259,7 @@ a.theme-btn.style-two {
 }
 
 .list-style-one li a:hover {
-  color: #ca9c6a;
+  color: #9f513b;
 }
 
 .list-style-one li:before {
@@ -322,7 +323,7 @@ a.theme-btn.style-two {
   border-radius: 50%;
   color: white;
   font-size: 18px;
-  background: #ca9c6a;
+  background: #9f513b;
   border: 1px solid #ffffff33;
   -webkit-animation: pulse 2s infinite;
   animation: pulse 2s infinite;
@@ -413,7 +414,7 @@ input[type="submit"]:focus {
 }
 
 .hero-content .text-lighter {
-  color: #ca9c6a;
+  color: #9f513b;
   font-weight: 200;
   letter-spacing: 10px;
 }
@@ -532,7 +533,7 @@ input[type="submit"]:focus {
   padding: 17px 66px 16px;
   margin-top: auto;
   margin-left: auto;
-  background: #ca9c6a;
+  background: #9f513b;
 }
 
 .banner-section nav li {
@@ -571,7 +572,7 @@ input[type="submit"]:focus {
   width: 20px;
   left: 100%;
   top: 0;
-  background: #ca9c6a;
+  background: #9f513b;
 }
 
 .wp-images img:last-child {
@@ -610,7 +611,7 @@ input[type="submit"]:focus {
 
 .experience-year .number {
   font-size: 80px;
-  color: #ca9c6a;
+  color: #9f513b;
   font-weight: 700;
   line-height: 65px;
   margin-right: 15px;
@@ -722,7 +723,7 @@ input[type="submit"]:focus {
   width: 100%;
   left: 30px;
   bottom: 35px;
-  background: #ca9c6a;
+  background: #9f513b;
 }
 
 .video-inner img {
@@ -736,7 +737,7 @@ input[type="submit"]:focus {
   left: 50%;
   top: 50%;
   z-index: 2;
-  color: #ca9c6a;
+  color: #9f513b;
   font-size: 22px;
   line-height: 76px;
   position: absolute;
@@ -916,8 +917,8 @@ input[type="submit"]:focus {
 
 .apartment-carousel .owl-nav div:hover {
   color: #ffffff;
-  background: #ca9c6a;
-  border-color: #ca9c6a;
+  background: #9f513b;
+  border-color: #9f513b;
 }
 
 /*apartment tab*/
@@ -941,7 +942,7 @@ input[type="submit"]:focus {
 
 .apartment-tab .nav-link:hover,
 .apartment-tab .nav-link.active {
-  color: #ca9c6a;
+  color: #9f513b;
   text-decoration: underline;
 }
 
@@ -952,7 +953,7 @@ input[type="submit"]:focus {
 
 .apertment-list li {
   display: flex;
-  color: #ca9c6a;
+  color: #9f513b;
   font-weight: 700;
   margin-bottom: 30px;
   letter-spacing: 3px;
@@ -1089,7 +1090,7 @@ input[type="submit"]:focus {
 }
 
 .success-content h3 {
-  color: #ca9c6a;
+  color: #9f513b;
   font-weight: 200;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -1105,7 +1106,7 @@ input[type="submit"]:focus {
 
 /*style two*/
 .success-section.style-two {
-  background: #ca9c6a;
+  background: #9f513b;
 }
 
 .success-section.style-two .count-text,
@@ -1294,7 +1295,7 @@ input[type="submit"]:focus {
 }
 
 .call-action-inner {
-  background: #ca9c6a;
+  background: #9f513b;
   padding: 70px 100px;
 }
 
@@ -1368,7 +1369,7 @@ input[type="submit"]:focus {
 }
 
 .team-item:hover .team-des h3 {
-  color: #ca9c6a;
+  color: #9f513b;
 }
 
 /****************************************************** */
@@ -1395,7 +1396,7 @@ input[type="submit"]:focus {
   position: absolute;
   left: 25px;
   bottom: 25px;
-  background: #ca9c6a;
+  background: #9f513b;
   color: white;
   font-size: 14px;
   font-weight: 500;
@@ -1440,7 +1441,7 @@ input[type="submit"]:focus {
 
 .read-more {
   font-size: 14px;
-  color: #ca9c6a;
+  color: #9f513b;
   font-weight: 700;
   letter-spacing: 8px;
   text-transform: uppercase;
@@ -1454,7 +1455,7 @@ input[type="submit"]:focus {
 blockquote {
   font-size: 24px;
   font-weight: 600;
-  color: #ca9c6a;
+  color: #9f513b;
   line-height: 1.45;
   padding: 40px;
   background: #f5f5f5;
@@ -1466,7 +1467,7 @@ blockquote {
 }
 
 .blog-share .social-title {
-  color: #ca9c6a;
+  color: #9f513b;
   font-size: 18px;
   font-weight: 600;
   margin-right: 20px;
@@ -1478,7 +1479,7 @@ blockquote {
 }
 
 .comment-title {
-  color: #ca9c6a;
+  color: #9f513b;
   margin-bottom: 25px;
 }
 
@@ -1586,7 +1587,7 @@ blockquote {
 }
 
 .contact-widget h6:last-child {
-  color: #ca9c6a;
+  color: #9f513b;
 }
 
 /*footer bottom*/
@@ -1612,7 +1613,7 @@ blockquote {
 }
 
 .copyright p a {
-  color: #ca9c6a;
+  color: #9f513b;
 }
 /****************************************************** */
 /***************** 16. Video Section  **************** */

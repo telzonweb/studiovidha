@@ -16,8 +16,8 @@ const CtaSection = (props) => {
           <div className="row align-items-center">
             <div className="col-lg-9">
               <div className="section-title text-white rmb-35">
-                <h6>get quote</h6>
-                <h2>call for action</h2>
+                <h6>Contact Now</h6>
+                <h2>Lets create something Amazing</h2>
               </div>
             </div>
             <div className="col-lg-3">

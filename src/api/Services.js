@@ -22,8 +22,9 @@ const Services = [
     sSimg: sSimg1,
     sTitle: "Architecture Design",
     slug: "architecture-design",
-    description:
-      "Noimy donecing and vivamus vitae commodo. Ut purus ornare laoreet ultrices are sitac",
+    description: `The Architecture service involves the creation of innovative and functional designs for 
+various structures, ranging from residential homes to commercial buildings and public 
+spaces.`,
     des2: "Elementum aliquam byuerirra sagittis duis non quis.",
     des3: "One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy the activities",
     ssImg1: sSingleimg1,
@@ -35,8 +36,8 @@ const Services = [
     sSimg: sSimg2,
     sTitle: "Interior Design",
     slug: "interior-design",
-    description:
-      "Noimy donecing and vivamus vitae commodo. Ut purus ornare laoreet ultrices are sitac",
+    description: `The Interior Design service focuses on creating functional, visually appealing, and 
+harmonious interior spaces within built structures.`,
     des2: "Elementum aliquam byuerirra sagittis duis non quis.",
     des3: "One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy the activities",
     ssImg1: sSingleimg1,
@@ -48,8 +49,9 @@ const Services = [
     sSimg: sSimg2,
     sTitle: "Landscape Design",
     slug: "landscape-design",
-    description:
-      "Noimy donecing and vivamus vitae commodo. Ut purus ornare laoreet ultrices are sitac",
+    description: `The Landscape design service involves the creation of outdoor spaces that seamlessly 
+integrate with built structures, harmonizing natural elements with human needs and 
+requirements`,
     des2: "Elementum aliquam byuerirra sagittis duis non quis.",
     des3: "One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy the activities",
     ssImg1: sSingleimg1,
