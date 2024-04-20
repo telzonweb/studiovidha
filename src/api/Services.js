@@ -41,6 +41,19 @@ const Services = [
     des3: "One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy the activities",
     ssImg1: sSingleimg1,
     ssImg2: sSingleimg2,
-  }
+  },
+  {
+    Id: "3",
+    sImg: simg2,
+    sSimg: sSimg2,
+    sTitle: "Landscape Design",
+    slug: "landscape-design",
+    description:
+      "Noimy donecing and vivamus vitae commodo. Ut purus ornare laoreet ultrices are sitac",
+    des2: "Elementum aliquam byuerirra sagittis duis non quis.",
+    des3: "One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy the activities",
+    ssImg1: sSingleimg1,
+    ssImg2: sSingleimg2,
+  },
 ];
 export default Services;
