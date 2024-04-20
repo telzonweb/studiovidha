@@ -27,6 +27,7 @@ const HomePage = () => {
       <YtGrid />
       <PartnerSection />
       <ResturantSec />
+
       <ProjectSection />
       <FunFact />
       <FaqSection />

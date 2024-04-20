@@ -16,7 +16,7 @@ const AboutPage = () => {
       <Navbar />
       <PageTitle pageTitle={"About Us"} pagesub={"About"} />
       <Paragraph />
-      <ServiceSection ptClass={"pt-100"} />
+      {/* <ServiceSection ptClass={"pt-100"} /> */}
       <About2 />
       <FunFact fClass={"style-two pt-165 pb-125 mb-0"} />
       {/* <TeamSection/> */}

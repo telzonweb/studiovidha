@@ -1,6 +1,7 @@
 import React from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import hImg from "../../images/interiorHero.jpg";
+// import hImg from "../../images/interiorHero.jpg";
+import hImg from "../../images/mainUpload/home/homeCoverImg.webp";
 
 const Hero = () => {
   return (
@@ -11,10 +12,10 @@ const Hero = () => {
       <div className="container">
         <div className="hero-content">
           <h1 className="text-bold text-white">Let Your Home Be</h1>
-          <h1 className="text-lighter">Unique and Stylish</h1>
-          <AnchorLink href="#about" className="scroll-down scroll">
+          <h1 className="text-white text-bold">Unique and Stylish</h1>
+          {/* <AnchorLink href="#about" className="scroll-down scroll">
             <div className="scroll-box"></div>
-          </AnchorLink>
+          </AnchorLink> */}
         </div>
       </div>
     </section>

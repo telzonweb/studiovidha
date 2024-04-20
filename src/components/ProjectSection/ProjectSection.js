@@ -35,7 +35,7 @@ const ProjectSection = (props) => {
                       </Link> */}
                       {project.pTitle}
                     </h3>
-                    <span>from {project.width} m2</span>
+                    {/* <span>from {project.width} m2</span> */}
                     <p>{project.des} </p>
                   </div>
                 </div>

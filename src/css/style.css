@@ -485,7 +485,7 @@ input[type="submit"]:focus {
 /******************** 03. Page Banner ***************** */
 /****************************************************** */
 .banner-section {
-  background: url(../images/team/abt-1.png);
+  background: url(../images/mainUpload/about/about_cover.webp);
   background-size: cover;
   display: flex;
 }
@@ -624,7 +624,8 @@ input[type="submit"]:focus {
   min-height: 600px;
   position: relative;
   height: calc(100% - 100px);
-  background: url("../images/team/abt-2.png") no-repeat center/cover;
+  background: url("../images/mainUpload/about/about_vidha.webp") no-repeat
+    center/cover;
 }
 
 .about-image:before {
@@ -791,15 +792,19 @@ input[type="submit"]:focus {
 /*************** 08. Rastaurant Section  ************** */
 /****************************************************** */
 .rastaurant-left {
-  background: url("../images/mainUpload/home/img1.jpg") no-repeat center/cover;
+  background: url("../../public/images/home/home03_Projects.webp") no-repeat
+    center/cover;
   min-height: 500px;
   height: 100%;
 }
 
 .rastaurant-right {
-  background: url("../images/restaurants/right.png") no-repeat center/cover;
+  /* background: url("../images/restaurants/right.png") no-repeat center/cover; */
+  color: #9f513b;
 }
-
+.theme-color {
+  color: #9f513b;
+}
 .ras-content {
   max-width: 585px;
 }

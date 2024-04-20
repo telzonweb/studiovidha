@@ -9,10 +9,10 @@ const ResturantSec = (props) => {
             <div className="rastaurant-left"></div>
           </div>
           <div className="col-lg-6 pl-0">
-            <div className="rastaurant-right pt-240 pb-250 rpt-140 rpb-150">
+            <div className="rastaurant-right pt-100 pb-100 rpt-140 rpb-150">
               <div className="ras-content pl-70">
-                <h2 className="border-text">Projects</h2>
-                <h2 className="text-white">
+                <h2 className="">Projects</h2>
+                <h2 className="theme-color">
                   Residentials
                   <br />
                   Shops

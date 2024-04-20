@@ -3,11 +3,11 @@ import CountUp from "react-countup";
 
 const FunFact = (props) => {
   const funFact = [
-    {
-      title: "450",
-      subTitle: "Square Areas",
-      sts: "Complex",
-    },
+    // {
+    //   title: "450",
+    //   subTitle: "Square Areas",
+    //   sts: "Complex",
+    // },
     {
       title: "500",
       subTitle: "Happy",
