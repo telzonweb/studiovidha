@@ -29,6 +29,11 @@ const menus = [
     title: "about",
     link: "/about",
   },
+  {
+    id: 2,
+    title: "Services",
+    link: "/services",
+  },
 
   {
     id: 6,
