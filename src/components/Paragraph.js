@@ -2,7 +2,7 @@ import React from "react";
 
 const Paragraph = () => {
   return (
-    <section className="pt-60 pl-90 pr-80 fs-5">
+    <section className="pt-50 pl-50 pr-40 fs-5">
       <div className="container">
         <div className="row">
           <div className="col-lg-6 col-md-6 col-sm-12">
