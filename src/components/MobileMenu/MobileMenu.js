@@ -10,18 +10,6 @@ const menus = [
     id: 1,
     title: "Home",
     link: "/home",
-    // submenu: [
-    //     {
-    //         id: 11,
-    //         title: 'Home style 1',
-    //         link: '/home'
-    //     },
-    //     {
-    //         id: 12,
-    //         title: 'Home style 2',
-    //         link: '/home2'
-    //     }
-    // ]
   },
 
   {
@@ -39,18 +27,6 @@ const menus = [
     id: 6,
     title: "Projects",
     link: "/property",
-    // submenu: [
-    //     {
-    //         id: 61,
-    //         title: 'Project',
-    //         link: '/property'
-    //     },
-    //     {
-    //         id: 62,
-    //         title: 'Project Single',
-    //         link: '/project-single/Architecture'
-    //     }
-    // ]
   },
   //   {
   //     id: 7,
