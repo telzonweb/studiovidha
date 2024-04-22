@@ -32,9 +32,9 @@ const ServiceSection2 = (props) => {
                 <p>{service.description}</p>
                 <h4>Services</h4>
                 <ul>
-                  {service.IncludedServices.map((item) => {
-                    return <li>{item}</li>;
-                  })}
+                  {service.IncludedServices.map((item) => (
+                    <li>{item}</li>
+                  ))}
                 </ul>
               </div>
             </div>
