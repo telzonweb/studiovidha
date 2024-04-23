@@ -486,7 +486,7 @@ input[type="submit"]:focus {
 /******************** 03. Page Banner ***************** */
 /****************************************************** */
 .banner-section {
-  background: url(../images/mainUpload/about/about_cover.webp);
+  background: url(../images/mainUpload/about/about_cover.jpg);
   background-size: cover;
   display: flex;
 }

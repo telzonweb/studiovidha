@@ -19,6 +19,9 @@ const partners = [
   {
     pImg: "images/clientLogo/cl3.jpg",
   },
+  {
+    pImg: "images/clientLogo/cl4.jpg",
+  },
   //   {
   //     pImg: pimg3,
   //   },
@@ -38,14 +41,14 @@ const PartnerSection = () => {
     dots: false,
     arrows: false,
     speed: 1000,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     responsive: [
       {
         breakpoint: 1500,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 4,
           slidesToScroll: 1,
         },
       },

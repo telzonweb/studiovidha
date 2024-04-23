@@ -7,7 +7,7 @@ const Paragraph = () => {
         <div className="row">
           <div className="col-lg-6 col-md-6 col-sm-12">
             <img
-              src="https://archello.s3.eu-central-1.amazonaws.com/images/2018/10/11/Contemporary-Modern-House-Design-6.1539270983.8601.jpg"
+              src="images/about/about.jpg"
               alt="about"
               className="img-fluid"
             />
