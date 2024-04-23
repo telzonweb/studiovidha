@@ -18,7 +18,7 @@ import sSingleimg2 from "../images/service-single/3.jpg";
 const Services = [
   {
     Id: "1",
-    sImg: simg,
+    sImg: "images/vector/arch_vector.jpg",
     sSimg: sSimg1,
     sTitle: "Architecture Design",
     slug: "architecture-design",
@@ -40,7 +40,7 @@ spaces.`,
   },
   {
     Id: "2",
-    sImg: simg2,
+    sImg: "images/vector/int_vector.jpg",
     sSimg: sSimg2,
     sTitle: "Interior Design",
     slug: "interior-design",
@@ -63,7 +63,7 @@ harmonious interior spaces within built structures.`,
   },
   {
     Id: "3",
-    sImg: simg2,
+    sImg: "images/vector/land_vector.jpg",
     sSimg: sSimg2,
     sTitle: "Landscape Design",
     slug: "landscape-design",

@@ -35,7 +35,7 @@ const About = (props) => {
                 </h2>
                 <h6>Welcome to Studio Vidha</h6>
               </div>
-              <img src={abimg3} alt="" />
+              <img src="images/home/home9.jpg" alt="" height="250px" />
             </div>
           </div>
         </div>

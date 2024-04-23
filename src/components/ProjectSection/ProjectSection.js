@@ -14,7 +14,6 @@ const ProjectSection = (props) => {
           <h2>
             Choose your <span className="thin">Design Style</span>
           </h2>
-          <p>Some text</p>
         </div>
         <div className="apartment-carousel">
           <div className="row">

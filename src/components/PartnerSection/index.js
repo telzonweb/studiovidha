@@ -83,12 +83,17 @@ const PartnerSection = () => {
   return (
     <div className="client-section pb-30 pt-85">
       <div className="container">
+        <div className="section-title text-center mb-75">
+          <h2>
+            Our top <span className="thin">Clients</span>
+          </h2>
+        </div>
         <div className="client-inner">
           <Slider {...settings}>
             {partners.map((partner, pitem) => (
               <div className="client-item" key={pitem}>
                 <Link to="/">
-                  <img src={partner.pImg} alt="Client" height="80px" />
+                  <img src={partner.pImg} alt="Client" height="120px" />
                 </Link>
               </div>
             ))}
