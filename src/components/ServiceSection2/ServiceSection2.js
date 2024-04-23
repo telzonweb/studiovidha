@@ -11,7 +11,7 @@ const ServiceSection2 = (props) => {
 
   return (
     <section
-      className="services-section pt-250 rpt-100 pb-70"
+      className="services-section pt-190 rpt-100 pb-70"
       style={{ backgroundImage: `url(${Bg})` }}
     >
       <div className="container">
@@ -20,7 +20,7 @@ const ServiceSection2 = (props) => {
             <div className="col-lg-4 col-md-4 col-12" key={Sitem}>
               <div className="service-item">
                 <span className="number">0{service.Id}</span>
-                <img src={service.sImg} alt="Icon" />
+                <img height={250} width={250} src={service.sImg} alt="Icon" />
                 <h3>
                   <Link
                     onClick={ClickHandler}
