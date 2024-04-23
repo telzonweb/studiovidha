@@ -100,7 +100,7 @@ const ServiceSinglePage = (props) => {
                     <img
                       src={serviceDetailsdata.sSimg}
                       height={400}
-                      width={1170}
+                      width={1310}
                       alt=""
                     />
                   </div>
@@ -115,7 +115,7 @@ const ServiceSinglePage = (props) => {
                         <img
                           src={serviceDetailsdata.ssImg1}
                           height={370}
-                          width={570}
+                          width={550}
                           alt=""
                         />
                       </div>

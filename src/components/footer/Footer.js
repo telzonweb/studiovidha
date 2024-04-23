@@ -57,13 +57,13 @@ const Footer = (props) => {
                 <Link onClick={ClickHandler} to="/">
                   <i className="fa fa-twitter"></i>
                 </Link>
-                <Link onClick={ClickHandler} to="/">
+                <Link onClick={ClickHandler} to="https://www.facebook.com/profile.php?id=100088486659637&mibextid=ZbWKwL">
                   <i className="fa fa-facebook"></i>
                 </Link>
-                <Link onClick={ClickHandler} to="/">
+                <Link onClick={ClickHandler} to="https://www.instagram.com/studio_vidha?igsh=bm16b284ejQ1ZDF2">
                   <i className="fa fa-instagram"></i>
                 </Link>
-                <Link onClick={ClickHandler} to="/">
+                <Link onClick={ClickHandler} to="https://pin.it/5GL4y9cgV">
                   <i className="fa fa-pinterest"></i>
                 </Link>
               </div>
