@@ -93,16 +93,11 @@ const ServiceSinglePage = (props) => {
       <div className="service-single-area section-padding">
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-lg-7 col-11">
+            <div className="col-lg-9 col-11">
               <div className="service-single-wrap">
                 <div className="service-single-item">
                   <div className="service-single-main-img">
-                    <img
-                      src={serviceDetailsdata.sSimg}
-                      height={400}
-                      width={1310}
-                      alt=""
-                    />
+                    <img src={serviceDetailsdata.sSimg} width="auto" alt="" />
                   </div>
                   <div className="service-single-title">
                     <h3>{serviceDetailsdata.Service}</h3>
