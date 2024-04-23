@@ -25,7 +25,7 @@ const About2 = (props) => {
                 </h2>
                 <h6>Welcome to StudioVidha</h6>
               </div>
-              <img src={abimg} alt="" />
+              <img src="images/home/home9.jpg" alt="" />
             </div>
           </div>
         </div>
