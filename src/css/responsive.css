@@ -15,7 +15,7 @@
     min-height: 700px;
   }
   .hero-content {
-    padding-top: 80px;
+    padding-top: 140px;
   }
   .hero-content h1,
   .page-title h2 {
@@ -212,6 +212,9 @@
   .hero-section {
     min-height: 450px;
     padding: 50px 0;
+  }
+  .hero-content {
+    padding-top: 70px;
   }
   .page-title h2,
   .hero-content h1 {
