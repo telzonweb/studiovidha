@@ -25,10 +25,16 @@ const CtaSection = (props) => {
                                 <input type="email" placeholder="enter your mail" required/>
                                 <button type="submit" className="theme-btn style-two">subscribe</button>
                             </form> */}
-              <button type="submit" className="theme-btn style-two">
-                <i className="fa fa-whatsapp"></i>
-                {"  "} WhatsApp
-              </button>
+              <a
+                href="https://wa.me/+919881102067"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button type="submit" className="theme-btn style-two">
+                  <i className="fa fa-whatsapp"></i>
+                  {"  "} WhatsApp
+                </button>
+              </a>
             </div>
           </div>
         </div>

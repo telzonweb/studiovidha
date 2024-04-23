@@ -403,6 +403,7 @@ input[type="submit"]:focus {
   background-position: center;
   align-items: center;
   display: flex;
+  align-items: flex-start;
 }
 
 .hero-content {
@@ -1170,7 +1171,7 @@ input[type="submit"]:focus {
 .faq-accordion .card-header .accordion-button {
   color: #1e1e1e;
   font-weight: 300;
-  letter-spacing: 10px;
+  letter-spacing: 3px;
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
   padding: 0;
@@ -1644,4 +1645,8 @@ iframe {
     height: 200px;
     border-radius: 10px;
   }
+}
+.funFact {
+  display: flex;
+  justify-content: center;
 }

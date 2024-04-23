@@ -28,7 +28,7 @@ const FunFact = (props) => {
   return (
     <section className={`success-section mb-115 ${props.fClass}`}>
       <div className="container">
-        <div className="row">
+        <div className="row funFact">
           {funFact.map((funfact, fitem) => (
             <div className="col-xl-3 col-md-6" key={fitem}>
               <div className="success-box">

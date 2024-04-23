@@ -14,7 +14,7 @@ const YtGrid = () => {
           <iframe
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/videoseries?si=uXsj4poafm6g-9Cj&amp;list=PLRAV69dS1uWT4v4iK1h6qejyhGObFH9_o"
+            src="https://www.youtube.com/embed/videoseries?si=ZKrZgVsqZSo45Ygk&amp;list=PLtkPs7OL4oiQw_T4LUM5ZXOXIRiK0Oyq5"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -26,7 +26,7 @@ const YtGrid = () => {
           <iframe
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/videoseries?si=uXsj4poafm6g-9Cj&amp;list=PLRAV69dS1uWT4v4iK1h6qejyhGObFH9_o"
+            src="https://www.youtube.com/embed/videoseries?si=d0xqt5HHReeGdw26&amp;list=PLtkPs7OL4oiQjaH4JPq2njJgZN72kLpqW"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -38,7 +38,7 @@ const YtGrid = () => {
           <iframe
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/videoseries?si=uXsj4poafm6g-9Cj&amp;list=PLRAV69dS1uWT4v4iK1h6qejyhGObFH9_o"
+            src="https://www.youtube.com/embed/videoseries?si=uadwGgYf8WDezT8k&amp;list=PLtkPs7OL4oiRtqZQ3dr6RMbbG0ZrQBW03"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -50,7 +50,7 @@ const YtGrid = () => {
           <iframe
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/videoseries?si=uXsj4poafm6g-9Cj&amp;list=PLRAV69dS1uWT4v4iK1h6qejyhGObFH9_o"
+            src="https://www.youtube.com/embed/videoseries?si=xAklom4wbGnhGsQ2&amp;list=PLtkPs7OL4oiQ1QTjf7v4VZOi4KzQo7RPx"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

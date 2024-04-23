@@ -19,7 +19,7 @@ const ServiceSection = (props) => {
             <div className="col-lg-4 col-md-6 col-12" key={Sitem}>
               <div className="service-item">
                 <span className="number">0{service.Id}</span>
-                <img src={service.sImg} alt="Icon" />
+                <img src={service.sImg} alt="Icon" height="100px" />
                 <h3>
                   <Link
                     onClick={ClickHandler}
