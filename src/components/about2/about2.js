@@ -9,7 +9,7 @@ const About2 = (props) => {
           <div className="col-lg-7">
             <div className="about-image mr-50 rmr-0">
               <div className="experience-year">
-                <span className="number">25</span>
+                <span className="number">25+</span>
                 <h4>Years of Experience</h4>
               </div>
             </div>
@@ -17,7 +17,7 @@ const About2 = (props) => {
           <div className="col-lg-5">
             <div className="wp-content about-content mb-10 ml-50 pt-100 rmb-50">
               <div className="section-title mb-10">
-                <h6>BEST ARCHITECT</h6>
+                <h6>BEST IN CLASS</h6>
                 <h2>
                   THE MOST PROMISING ARCHITECTURE <br />
                   <span>interior</span> <br />
