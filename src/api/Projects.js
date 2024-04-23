@@ -17,7 +17,7 @@ const Projects = [
     slug: "Architecture",
     pImg: "images/home/home04_Living.webp",
     pSImg: pSImg1,
-    ssIcon: "images/vector/living.jpg",
+    ssIcon: "images/vector/living.png",
     des: `Elevate your home to new heights of sophistication and style with our classy living 
 spaces design service. From luxurious lounges to elegant entertainment areas, our 
 expert designers specialize in creating refined and inviting environments that exude 
@@ -30,7 +30,7 @@ timeless charm and effortless glamour.`,
     slug: "Exterior-Design",
     pImg: "images/home/home05_kitchen.webp",
     pSImg: pSImg2,
-    ssIcon: "images/vector/kitchen.jpg",
+    ssIcon: "images/vector/kitchen.png",
     des: `Experience the perfect blend of style, functionality, and innovation with our modern 
 kitchen designs. Our expert designers specialize in creating sleek and sophisticated 
 culinary spaces that are as beautiful as they are practical, redefining the heart of your 
@@ -43,7 +43,7 @@ home with cutting-edge design and state-of-the-art amenities`,
     slug: "Interior",
     pImg: "images/home/home06_bedroom.webp",
     pSImg: pSImg3,
-    ssIcon: "images/vector/bedroom.jpg",
+    ssIcon: "images/vector/bedroom.png",
     des: `Create a warm and inviting retreat where you can escape the stresses of the day and 
 unwind in comfort with our cozy bedroom designs. Our expert designers specialize in 
 crafting intimate and snug spaces that envelop you in a sense of serenity and 
