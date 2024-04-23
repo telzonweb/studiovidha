@@ -26,7 +26,7 @@ const Header2 = (props) => {
                             <nav className="main-menu navbar-expand-lg">
                                 <MobileMenu />
                                 <div className="navbar-collapse collapse clearfix">
-                                    <ul className="navigation clearfix">
+                                    <ul className="navigation clearfix pt-20">
                                         <li><Link onClick={ClickHandler} to="/">Home</Link>
                                             <ul>
                                                 <li><Link onClick={ClickHandler} to="/home">Home Style 1</Link></li>

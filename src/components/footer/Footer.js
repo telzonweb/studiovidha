@@ -54,27 +54,25 @@ const Footer = (props) => {
                 architectural realm.
               </p>
               <div className="social-icons">
-                <Link
-                  onClick={ClickHandler}
-                  to="https://www.instagram.com/studio_vidha?igsh=bm16b284ejQ1ZDF2"
-                >
-                  <i className="fa fa-instagram"></i>
-                </Link>
-                <Link
-                  onClick={ClickHandler}
-                  to="https://www.facebook.com/profile.php?id=100088486659637&mibextid=ZbWKwL"
-                >
+
+                <a onClick={ClickHandler} href="/">
+                  <i className="fa fa-twitter"></i>
+                </a>
+                <a onClick={ClickHandler} href="https://www.facebook.com/profile.php?id=100088486659637&mibextid=ZbWKwL">
                   <i className="fa fa-facebook"></i>
-                </Link>
-                <Link
+                </a>
+                <a onClick={ClickHandler} href="https://www.instagram.com/studio_vidha?igsh=bm16b284ejQ1ZDF2">
+                  <i className="fa fa-instagram"></i>
+                </a>
+                <a
                   onClick={ClickHandler}
-                  to="https://www.linkedin.com/in/vasundhara-bhoyar-048148167/?originalSubdomain=in"
+                  href="https://www.linkedin.com/in/vasundhara-bhoyar-048148167/?originalSubdomain=in"
                 >
                   <i className="fa fa-linkedin"></i>
-                </Link>
-                <Link onClick={ClickHandler} to="https://pin.it/5GL4y9cgV">
+                </a>
+                <a onClick={ClickHandler} href="https://pin.it/5GL4y9cgV">
                   <i className="fa fa-pinterest"></i>
-                </Link>
+                </a>
               </div>
             </div>
             <div className="col-xl-6 col-lg-4">
