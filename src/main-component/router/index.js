@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
 import Homepage from "../HomePage/HomePage";
 import HomePage2 from "../HomePage2/HomePage2";
 import AboutPage from "../AboutPage/AboutPage";
@@ -11,12 +10,14 @@ import ProjectSinglePage from "../ProjectSinglePage/ProjectSinglePage";
 import BlogPage from "../BlogPage/BlogPage";
 import BlogDetails from "../BlogDetails/BlogDetails";
 import ContactPage from "../ContactPage/ContactPage";
+import Landing from "../../Landing-page/Landing"
 const AllRoute = () => {
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Homepage />} />
+          <Route path="/landing" element={<Landing />} />
           <Route path="home" element={<Homepage />} />
           {/* <Route path="home2" element={<HomePage2 />} /> */}
           <Route path="about" element={<AboutPage />} />
