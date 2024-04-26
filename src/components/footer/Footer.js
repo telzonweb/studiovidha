@@ -54,14 +54,19 @@ const Footer = (props) => {
                 architectural realm.
               </p>
               <div className="social-icons">
-
-                <a onClick={ClickHandler} href="/">
+                {/* <a onClick={ClickHandler} href="/">
                   <i className="fa fa-twitter"></i>
-                </a>
-                <a onClick={ClickHandler} href="https://www.facebook.com/profile.php?id=100088486659637&mibextid=ZbWKwL">
+                </a> */}
+                <a
+                  onClick={ClickHandler}
+                  href="https://www.facebook.com/profile.php?id=100088486659637&mibextid=ZbWKwL"
+                >
                   <i className="fa fa-facebook"></i>
                 </a>
-                <a onClick={ClickHandler} href="https://www.instagram.com/studio_vidha?igsh=bm16b284ejQ1ZDF2">
+                <a
+                  onClick={ClickHandler}
+                  href="https://www.instagram.com/studio_vidha?igsh=bm16b284ejQ1ZDF2"
+                >
                   <i className="fa fa-instagram"></i>
                 </a>
                 <a
@@ -102,6 +107,20 @@ const Footer = (props) => {
                   <Link onClick={ClickHandler} to="/">
                     StudioVidha
                   </Link>
+                </p>
+              </div>
+              <div className="copyright">
+                <p>
+                  Developed by
+                  <a
+                    onClick={ClickHandler}
+                    href="https://www.telzonmarketing.in/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {" "}
+                    TelzonMarketing
+                  </a>
                 </p>
               </div>
             </div>

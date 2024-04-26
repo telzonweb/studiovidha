@@ -33,11 +33,11 @@ const Header = (props) => {
               </div>
             </div>
 
-            <ul className="header-info">
+            <ul className="header-info theme-color ">
               <li>
                 {/* <i className="fa fa-map-marker"></i> */}
                 <Link onClick={ClickHandler} to="/about">
-                  <h6>
+                  <h6 className="theme-color">
                     <span>About</span>
                   </h6>
                 </Link>
