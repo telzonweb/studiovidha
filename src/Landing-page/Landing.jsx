@@ -30,6 +30,10 @@ const stringWithSpaces = stringWithHyphens.replace(/-/g, ' ');
 
   const handleScroll = () => setScroll(document.documentElement.scrollTop);
 
+  const stringWithHyphenss = city;
+  const parts = stringWithHyphenss.split("-");
+  const lastString = parts[parts.length - 1];
+
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -57,7 +61,7 @@ const stringWithSpaces = stringWithHyphens.replace(/-/g, ' ');
 <div className={className} style={{ backgroundColor: "#ca9c6a" }}>
 <Helmet>
                 <meta charSet="utf-8" />
-                <title>StudioVidha : Top Architect in {city}</title>
+                <title>{lastString}</title>
                 <meta name="description" content="Helmet application" />
             </Helmet>
   
