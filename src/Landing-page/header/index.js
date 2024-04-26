@@ -44,7 +44,20 @@ const Header = (props) => {
               </li>
               */}
             </ul>
-            <MobileMenu />
+            {/* <MobileMenu /> */}
+            <div 
+   style={{ 
+    padding: '10px', 
+    backgroundColor: '#ca9c6a', 
+    cursor: 'pointer', 
+    borderRadius: '5px',
+    color: '#ffffff',
+    fontWeight: '600'
+  }}
+  onClick={() => window.open('https://wa.me/+919881102067', '_blank')}
+>
+  Call Us Now
+</div>
             {/* <div className="languages">
               <select name="languages" id="languages">
                 <option value="lang-1">English</option>

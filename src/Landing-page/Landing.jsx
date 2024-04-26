@@ -5,8 +5,15 @@ import { Link } from "react-router-dom";
 import Services from "../api/Services";
 import Bg from "../images/services/service-bg.jpg";
 import Footer from "../components/footer/Footer";
+import { useParams } from "react-router-dom"; // Import useParams
+
 const Landing = () => {
-    
+  const { city } = useParams(); // Use useParams hook to get city parameter
+console.log(city)
+const [openAccordion, setOpenAccordion] = useState(null);
+const toggleAccordion = (index) => {
+  setOpenAccordion(openAccordion === index ? null : index);
+};
   const [scroll, setScroll] = useState(0);
   const [formData, setFormData] = useState({
     name: "",
@@ -51,7 +58,7 @@ const Landing = () => {
             <div className="container">
                 <div className="banner-inner">
                     <div style={{ marginBottom: '100px' }} className="page-title">
-                        <h2></h2>
+                    <h2 style={{ fontSize: "50px" }}>{`Architecture in ${city}`}</h2>
                         <span></span>
                     </div>
                     <nav aria-label="breadcrumb" style={{ backgroundColor: '#ca9c6a' }}>
@@ -66,7 +73,7 @@ const Landing = () => {
         <div className="row">
           <div className="col-lg-6 col-md-6 col-sm-12">
             <img
-              src="images/about/about.jpg"
+              src="../images/about/about.jpg"
               alt="about"
               className="img-fluid"
             />
@@ -114,7 +121,7 @@ const Landing = () => {
                 <img
                   height="120px"
                   width="120px"
-                  src={service.sImg}
+                  src={`../${service.sImg}`}
                   alt="Icon"
                 />
                 <h3>
@@ -138,7 +145,38 @@ const Landing = () => {
         </div>
       </div>
     </section>
-    <section className="contact-section bg-light">
+    <section className="faq-section pt-50 pb-70" style={{ backgroundColor: "#ffffff" }}>
+  <div className="container">
+    <h2 className="text-center mb-5" style={{ color: "#000000" }}>Frequently Asked Questions</h2>
+    <div className="accordion mt-4" id="accordionExample">
+      {FAQData.map((faq, index) => (
+        <div className="accordion-item" key={index}>
+          <h2 className="accordion-header" id={`heading${index}`}>
+            <button
+              className="accordion-button"
+              type="button"
+              style={{ color: "#000000" }}
+              onClick={() => toggleAccordion(index)}
+            >
+              {faq.question}
+            </button>
+          </h2>
+          <div
+            id={`collapse${index}`}
+            className={`accordion-collapse collapse ${openAccordion === index ? "show" : ""}`}
+            aria-labelledby={`heading${index}`}
+            data-bs-parent="#accordionExample"
+            style={{ backgroundColor: "#ffffff" }}
+          >
+            <div className="accordion-body" style={{ color: "#000000" }}>{faq.answer}</div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+    <section className="contact-section bg-light mt-2">
         <div className="container">
           <h2 className="text-center mb-5">Contact Us</h2>
           <form onSubmit={handleSubmit} style={styles.contactForm}>
@@ -182,7 +220,7 @@ const Landing = () => {
               ></textarea>
             </div>
             <div className="text-center">
-              <button type="submit" className="btn btn-primary">
+<button type="submit" style={{ backgroundColor: '#ca9c6a', border: 'none' }} className="btn btn-primary">
                 Submit
               </button>
             </div>
@@ -206,3 +244,38 @@ const styles = {
       margin: "0 auto",
     },
   };
+  const FAQData = [
+    {
+      question: "Question 1: What types of accommodation do you offer?",
+      answer: "Answer 1: We offer various types of accommodation including single rooms, double rooms, suites, and dormitories.",
+    },
+    {
+      question: "Question 2: What amenities are included with the accommodation?",
+      answer: "Answer 2: Our accommodation comes with amenities such as free Wi-Fi, complimentary breakfast, air conditioning, and 24/7 security.",
+    },
+    {
+      question: "Question 3: Do you provide laundry services?",
+      answer: "Answer 3: Yes, we offer laundry services for our guests.",
+    },
+    {
+      question: "Question 4: Is parking available on-site?",
+      answer: "Answer 4: Yes, we provide parking facilities for our guests.",
+    },
+    {
+      question: "Question 5: Are pets allowed in the accommodation?",
+      answer: "Answer 5: Unfortunately, we do not allow pets in our accommodation.",
+    },
+    {
+      question: "Question 6: What is the check-in/check-out time?",
+      answer: "Answer 6: Our standard check-in time is 3:00 PM, and check-out time is 12:00 PM.",
+    },
+    {
+      question: "Question 7: Do you offer room service?",
+      answer: "Answer 7: Yes, we provide room service for our guests during specified hours.",
+    },
+    {
+      question: "Question 8: Is there a fitness center available?",
+      answer: "Answer 8: Yes, we have a fitness center available for guests to use.",
+    },
+  ];
+  
