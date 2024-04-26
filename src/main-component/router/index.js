@@ -12,6 +12,8 @@ import BlogPage from "../BlogPage/BlogPage";
 import BlogDetails from "../BlogDetails/BlogDetails";
 import ContactPage from "../ContactPage/ContactPage";
 import Landing from "../../Landing-page/Landing"
+import NewLanding from "../../Landing/Landing"
+
 const AllRoute = () => {
   return (
     <div className="App">
@@ -19,6 +21,8 @@ const AllRoute = () => {
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/:city" element={<Landing />} />
+          <Route path="/landing" element={<NewLanding />} />
+
           <Route path="home" element={<Homepage />} />
           {/* <Route path="home2" element={<HomePage2 />} /> */}
           <Route path="about" element={<AboutPage />} />
