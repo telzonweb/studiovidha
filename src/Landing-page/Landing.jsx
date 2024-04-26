@@ -7,6 +7,7 @@ import Bg from "../images/services/service-bg.jpg";
 import Footer from "../components/footer/Footer";
 import { useParams } from "react-router-dom"; // Import useParams
 import {Helmet} from "react-helmet";
+
 const Landing = () => {
   const { city } = useParams(); // Use useParams hook to get city parameter
 console.log(city)
@@ -56,7 +57,7 @@ const stringWithSpaces = stringWithHyphens.replace(/-/g, ' ');
 <div className={className} style={{ backgroundColor: "#ca9c6a" }}>
 <Helmet>
                 <meta charSet="utf-8" />
-                <title>{city}</title>
+                <title>StudioVidha : Top Architect in {city}</title>
                 <meta name="description" content="Helmet application" />
             </Helmet>
   
@@ -218,7 +219,7 @@ const stringWithSpaces = stringWithHyphens.replace(/-/g, ' ');
 </section>
 
 
-    <section className="contact-section bg-light mt-2">
+    {/* <section className="contact-section bg-light mt-2">
         <div className="container">
           <h2 className="text-center mb-5">Contact Us</h2>
           <form onSubmit={handleSubmit} style={styles.contactForm}>
@@ -268,7 +269,7 @@ const stringWithSpaces = stringWithHyphens.replace(/-/g, ' ');
             </div>
           </form>
         </div>
-      </section>
+      </section> */}
 
       <section className="similar-services-section pt-50 pb-70" style={{ backgroundColor: "#ffffff" }}>
         <div className="container">
