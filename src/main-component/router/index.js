@@ -18,7 +18,7 @@ const AllRoute = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Homepage />} />
-          <Route path="/landing/:city" element={<Landing />} />
+          <Route path="Top-architect-:city" element={<Landing />} />
           <Route path="home" element={<Homepage />} />
           {/* <Route path="home2" element={<HomePage2 />} /> */}
           <Route path="about" element={<AboutPage />} />

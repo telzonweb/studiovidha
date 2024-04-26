@@ -228,6 +228,14 @@ const toggleAccordion = (index) => {
         </div>
       </section>
 
+      <p className="text-align:left ml-80 mr-40  mt-50">
+          <a href="https://www.re-thinkingthefuture.com/top-architects/a7892-architects-in-aurangabad-top-15-architects-in-aurangabad/">Top Architecture In Aurangabad | </a>
+          <a href="https://www.re-thinkingthefuture.com/top-architects/top-architecture-firms-in-nagpur/">Top Architecture In Nagpur | </a>
+          <a href="https://www.re-thinkingthefuture.com/top-architects/top-architecture-firms-in-pune/#google_vignette">Top Architecture In Pune | </a>
+          <a href="https://thearchitectsdiary.com/top-30-architects-in-mumbai/">Top Architecture In Mumbai | </a>
+          <a href="https://www.re-thinkingthefuture.com/top-architects/a661-architects-in-nashik-top-architecture-firms-in-nashik/">Top Architecture In Nashik </a>
+      </p>
+
 
 
 <Footer/>
