@@ -1,8 +1,8 @@
 import React from "react";
 import ContactForm from "../ContactFrom";
-import sIcon1 from "../../images/contact/icon1.png";
-import sIcon2 from "../../images/contact/icon2.png";
-import sIcon3 from "../../images/contact/icon3.png";
+import sIcon1 from "../../images/contact/LOCATION.png";
+import sIcon2 from "../../images/contact/MAIL.png";
+import sIcon3 from "../../images/contact/WEBSITE.png";
 
 const Contactpage = () => {
   return (
