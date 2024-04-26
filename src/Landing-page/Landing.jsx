@@ -6,7 +6,7 @@ import Services from "../api/Services";
 import Bg from "../images/services/service-bg.jpg";
 import Footer from "../components/footer/Footer";
 import { useParams } from "react-router-dom"; // Import useParams
-
+import {Helmet} from "react-helmet";
 const Landing = () => {
   const { city } = useParams(); // Use useParams hook to get city parameter
 console.log(city)
@@ -21,6 +21,11 @@ const toggleAccordion = (index) => {
     subject: "",
     message: "",
   });
+
+  const stringWithHyphens = city;
+const stringWithSpaces = stringWithHyphens.replace(/-/g, ' ');
+
+
 
   const handleScroll = () => setScroll(document.documentElement.scrollTop);
 
@@ -45,9 +50,17 @@ const toggleAccordion = (index) => {
   const ClickHandler = () => {
     window.scrollTo(10, 0);
   };
+  console.log(city)
   return (
 <Fragment>
-<div className={className} style={{ backgroundColor: "#ca9c6a" }}>      <Header
+<div className={className} style={{ backgroundColor: "#ca9c6a" }}>
+<Helmet>
+                <meta charSet="utf-8" />
+                <title>{city}</title>
+                <meta name="description" content="Helmet application" />
+            </Helmet>
+  
+        <Header
         hclass={'header-style-3'}
         // Logo={props.Logo}
         topbarClass={'topbar-none'}
@@ -58,7 +71,7 @@ const toggleAccordion = (index) => {
             <div className="container">
                 <div className="banner-inner">
                     <div style={{ marginBottom: '100px' }} className="page-title">
-                    <h2 style={{ fontSize: "50px" }}>{`Architecture in ${city}`}</h2>
+                    <h2 style={{ fontSize: "50px" }}>{`${stringWithSpaces}`}</h2>
                         <span></span>
                     </div>
                     <nav aria-label="breadcrumb" style={{ backgroundColor: '#ca9c6a' }}>
@@ -145,6 +158,34 @@ const toggleAccordion = (index) => {
         </div>
       </div>
     </section>
+    <section className="portfolio-section">
+  <div className="container">
+    <h2 className="text-center mb-5">Portfolio</h2>
+    <div className="row">
+      <div className="col-lg-4 col-md-4 col-sm-12">
+        <img src="https://parametric-architecture.com/wp-content/uploads/2023/05/Tim-Fu-AI-3.jpg" alt="Portfolio item" style={{marginTop: '20px', borderRadius: '10px', transition: 'transform 0.3s ease'}} className="img-fluid"/>
+      </div>
+      <div className="col-lg-4 col-md-4 col-sm-12">
+        <img src="https://parametric-architecture.com/wp-content/uploads/2023/05/Tim-Fu-AI-3.jpg" alt="Portfolio item" style={{marginTop: '20px', borderRadius: '10px', transition: 'transform 0.3s ease'}} className="img-fluid"/>
+      </div>
+      <div className="col-lg-4 col-md-4 col-sm-12">
+        <img src="https://parametric-architecture.com/wp-content/uploads/2023/05/Tim-Fu-AI-3.jpg" alt="Portfolio item" style={{marginTop: '20px', borderRadius: '10px', transition: 'transform 0.3s ease'}} className="img-fluid"/>
+      </div>
+      <div className="col-lg-4 col-md-4 col-sm-12">
+        <img src="https://parametric-architecture.com/wp-content/uploads/2023/05/Tim-Fu-AI-3.jpg" alt="Portfolio item" style={{marginTop: '20px', borderRadius: '10px', transition: 'transform 0.3s ease'}} className="img-fluid"/>
+      </div>
+      <div className="col-lg-4 col-md-4 col-sm-12">
+        <img src="https://parametric-architecture.com/wp-content/uploads/2023/05/Tim-Fu-AI-3.jpg" alt="Portfolio item" style={{marginTop: '20px', borderRadius: '10px', transition: 'transform 0.3s ease'}} className="img-fluid"/>
+      </div>
+      <div className="col-lg-4 col-md-4 col-sm-12">
+        <img src="https://parametric-architecture.com/wp-content/uploads/2023/05/Tim-Fu-AI-3.jpg" alt="Portfolio item" style={{marginTop: '20px', borderRadius: '10px', transition: 'transform 0.3s ease'}} className="img-fluid"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
     <section className="faq-section pt-50 pb-70" style={{ backgroundColor: "#ffffff" }}>
   <div className="container">
     <h2 className="text-center mb-5" style={{ color: "#000000" }}>Frequently Asked Questions</h2>
@@ -175,6 +216,7 @@ const toggleAccordion = (index) => {
     </div>
   </div>
 </section>
+
 
     <section className="contact-section bg-light mt-2">
         <div className="container">
@@ -220,7 +262,7 @@ const toggleAccordion = (index) => {
               ></textarea>
             </div>
             <div className="text-center">
-<button type="submit" style={{ backgroundColor: '#ca9c6a', border: 'none' }} className="btn btn-primary">
+<button type="submit" style={{ backgroundColor: '#ca9c6a', border: 'none' }} className="btn btn-primary mb-4">
                 Submit
               </button>
             </div>
@@ -228,15 +270,23 @@ const toggleAccordion = (index) => {
         </div>
       </section>
 
-      <p className="text-align:left ml-80 mr-40  mt-50">
-          <a href="https://www.re-thinkingthefuture.com/top-architects/a7892-architects-in-aurangabad-top-15-architects-in-aurangabad/">Top Architecture In Aurangabad | </a>
-          <a href="https://www.re-thinkingthefuture.com/top-architects/top-architecture-firms-in-nagpur/">Top Architecture In Nagpur | </a>
-          <a href="https://www.re-thinkingthefuture.com/top-architects/top-architecture-firms-in-pune/#google_vignette">Top Architecture In Pune | </a>
-          <a href="https://thearchitectsdiary.com/top-30-architects-in-mumbai/">Top Architecture In Mumbai | </a>
-          <a href="https://www.re-thinkingthefuture.com/top-architects/a661-architects-in-nashik-top-architecture-firms-in-nashik/">Top Architecture In Nashik </a>
-      </p>
-
-
+      <section className="similar-services-section pt-50 pb-70" style={{ backgroundColor: "#ffffff" }}>
+        <div className="container">
+          <h3 className="text-center mb-5" style={{ color: "#000000" }}>Similar Services in Other Cities:</h3>
+          <div className="text-center">
+            <Link to="/top-architect-in-bangalore">Architect in Bangalore</Link> |&nbsp;
+            <Link to="/top-architect-in-mumbai">Architect in Mumbai</Link> |&nbsp;
+            <Link to="/top-architect-in-chennai">Architect in Chennai</Link> |&nbsp;
+            <Link to="/top-architect-in-delhi">Architect in Delhi</Link> |&nbsp;
+            <Link to="/top-architect-in-hyderabad">Architect in Hyderabad</Link> |&nbsp;
+            <Link to="/top-architect-in-gurgaon">Architect in Gurgaon</Link> |&nbsp;
+            <Link to="/top-architect-in-noida">Architect in Noida</Link> |&nbsp;
+            <Link to="/top-architect-in-greater-noida">Architect in Greater Noida</Link> |&nbsp;
+            <Link to="/top-architect-in-faridabad">Architect in Faridabad</Link> |&nbsp;
+            <Link to="/top-architect-in-ghaziabad">Architect in Ghaziabad</Link>.
+          </div>
+        </div>
+      </section>
 
 <Footer/>
   
