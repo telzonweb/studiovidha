@@ -61,7 +61,7 @@ const stringWithSpaces = stringWithHyphens.replace(/-/g, ' ');
 <div className={className} style={{ backgroundColor: "#ca9c6a" }}>
 <Helmet>
                 <meta charSet="utf-8" />
-                <title>{lastString}</title>
+                <title>StudioVidha : Top Architect in {lastString}</title>
                 <meta name="description" content="Helmet application" />
             </Helmet>
   
