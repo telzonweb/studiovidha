@@ -8,7 +8,7 @@ import Footer from "../components/footer/Footer";
 import { useParams } from "react-router-dom"; // Import useParams
 import {Helmet} from "react-helmet";
 import FunFact from "../components/FunFact";
-
+import {BASEURL} from "../Constant";
 const NewLanding = () => {
   const { city } = useParams(); // Use useParams hook to get city parameter
 console.log(city)
@@ -20,11 +20,29 @@ const toggleAccordion = (index) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    subject: "",
+    number: "",
     message: "",
   });
 
-  
+  const submitForm = async () =>{
+    try {
+      const response = await fetch(`${BASEURL}/api/landing/form`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      });
+      setFormData({
+        name: "",
+        email: "",
+        number: "",
+        message: "",
+      })
+    } catch (error) {
+      console.log(error)
+    }
+  }
 
 
 
@@ -37,8 +55,7 @@ const toggleAccordion = (index) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission here (e.g., send data to backend)
-    console.log(formData);
+    submitForm();
   };
 
   React.useEffect(() => {
@@ -106,10 +123,10 @@ const toggleAccordion = (index) => {
             </div>
             <div className="form-group">
               <input
-                type="text"
-                name="subject"
+                type="number"
+                name="number"
                 className="form-control rounded"
-                placeholder="Subject"
+                placeholder="Your Number"
                 value={formData.subject}
                 onChange={handleInputChange}
               />
