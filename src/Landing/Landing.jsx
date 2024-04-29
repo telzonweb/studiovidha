@@ -144,12 +144,19 @@ const toggleAccordion = (index) => {
 </section>
 
 
+<div className="container py-5 text-center">
+      <h1 style={{color: '#rgb(175 150 76)', fontFamily: 'Arial, sans-serif', fontSize: '3rem', fontWeight: 'bold'}}>Welcome to StudioVidha</h1>
+      <p style={{fontSize: '1.2rem', lineHeight: '1.6', color: '#333'}}>
+        Explore the wonders of our website, where innovation meets elegance. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+      </p>
+    </div>
+
        
 
     {/* service section */}
 
     <section
-      className="services-section pt-190 rpt-100 pb-70"
+      className="services-section pt-90 rpt-100 pb-70"
       style={{ backgroundImage: `url(${Bg})` }}
     >
           <div className="section-title mb-75 text-center">
@@ -161,7 +168,7 @@ const toggleAccordion = (index) => {
       <div className="container">
         <div className="row">
           {Services.slice(0, 3).map((service, Sitem) => (
-            <div className="col-lg-4 col-md-4 col-12" key={Sitem}>
+            <div className="col-lg-4 col-md-4 col-10" key={Sitem}>
               <div className="service-item">
                 <span className="number">0{service.Id}</span>
                 <img
@@ -191,6 +198,7 @@ const toggleAccordion = (index) => {
         </div>
       </div>
     </section>
+
     <section className="portfolio-section">
   <div className="container">
     <h2 className="text-center mb-5">Portfolio</h2>
@@ -239,7 +247,7 @@ const toggleAccordion = (index) => {
   </div>
 </section>
 
-<div className="mt-50">
+<div className="mt-70">
 <FunFact />
 </div>
 
