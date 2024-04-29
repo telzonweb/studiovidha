@@ -7,6 +7,8 @@ import Bg from "../images/services/service-bg.jpg";
 import Footer from "../components/footer/Footer";
 import { useParams } from "react-router-dom"; // Import useParams
 import {Helmet} from "react-helmet";
+import FunFact from "../components/FunFact";
+
 const NewLanding = () => {
   const { city } = useParams(); // Use useParams hook to get city parameter
 console.log(city)
@@ -211,11 +213,22 @@ const toggleAccordion = (index) => {
       <div className="col-lg-4 col-md-4 col-sm-12">
         <img src="https://parametric-architecture.com/wp-content/uploads/2023/05/Tim-Fu-AI-3.jpg" alt="Portfolio item" style={{marginTop: '20px', borderRadius: '10px', transition: 'transform 0.3s ease'}} className="img-fluid"/>
       </div>
+      <div className="col-lg-4 col-md-4 col-sm-12">
+        <img src="https://parametric-architecture.com/wp-content/uploads/2023/05/Tim-Fu-AI-3.jpg" alt="Portfolio item" style={{marginTop: '20px', borderRadius: '10px', transition: 'transform 0.3s ease'}} className="img-fluid"/>
+      </div>
+      <div className="col-lg-4 col-md-4 col-sm-12">
+        <img src="https://parametric-architecture.com/wp-content/uploads/2023/05/Tim-Fu-AI-3.jpg" alt="Portfolio item" style={{marginTop: '20px', borderRadius: '10px', transition: 'transform 0.3s ease'}} className="img-fluid"/>
+      </div>
+      <div className="col-lg-4 col-md-4 col-sm-12">
+        <img src="https://parametric-architecture.com/wp-content/uploads/2023/05/Tim-Fu-AI-3.jpg" alt="Portfolio item" style={{marginTop: '20px', borderRadius: '10px', transition: 'transform 0.3s ease'}} className="img-fluid"/>
+      </div>
     </div>
   </div>
 </section>
 
-
+<div className="mt-4">
+<FunFact />
+</div>
 
     <section className="faq-section pt-50 pb-70" style={{ backgroundColor: "#ffffff" }}>
   <div className="container">
@@ -266,7 +279,7 @@ const toggleAccordion = (index) => {
           </div>
         </div>
       </section>
-
+  
 <Footer/>
   
     </Fragment>
