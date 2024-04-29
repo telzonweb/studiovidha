@@ -196,37 +196,50 @@ const toggleAccordion = (index) => {
     <h2 className="text-center mb-5">Portfolio</h2>
     <div className="row">
       <div className="col-lg-4 col-md-4 col-sm-12">
-        <img src="https://parametric-architecture.com/wp-content/uploads/2023/05/Tim-Fu-AI-3.jpg" alt="Portfolio item" style={{marginTop: '20px', borderRadius: '10px', transition: 'transform 0.3s ease'}} className="img-fluid"/>
+        <img src="https://media.architecturaldigest.com/photos/5e4445124ad6c70008b982bb/master/w_1600%2Cc_limit/016%252520Piramides.jpg" alt="Portfolio item" style={{marginTop: '20px', borderRadius: '10px', transition: 'transform 0.3s ease'}} className="img-fluid"/>
+      </div>
+      <div className="col-lg-4 col-md-4 col-sm- pt-60">
+      <p>
+              "It essentially refers to a manner or style of expression,
+              encompassing various forms within art and more. Architecture, as
+              an artistic discipline, shares common principles with other forms
+              of art, such as the involvement of senses, consideration of
+              lifestyle, incorporation of visual elements, and attention to the
+              technical details."
+            </p>
       </div>
       <div className="col-lg-4 col-md-4 col-sm-12">
+        <img src="https://www.contemporist.com/wp-content/uploads/2018/08/modern-architecture-building-design-wood-010818-121-01-800x613.jpg" alt="Portfolio item" style={{marginTop: '20px', borderRadius: '10px', transition: 'transform 0.3s ease'}} className="img-fluid"/>
+      </div>
+      <div className="col-lg-4 col-md-4 col-sm-12 pt-60">
+      <p>
+              "It essentially refers to a manner or style of expression,
+              encompassing various forms within art and more. Architecture, as
+              an artistic discipline, shares common principles with other forms
+              of art, such as the involvement of senses, consideration of
+              lifestyle, incorporation of visual elements, and attention to the
+              technical details."
+            </p>
+      </div>
+      <div className="col-lg-4 col-md-4 col-sm-12" alt="Portfolio item">
         <img src="https://parametric-architecture.com/wp-content/uploads/2023/05/Tim-Fu-AI-3.jpg" alt="Portfolio item" style={{marginTop: '20px', borderRadius: '10px', transition: 'transform 0.3s ease'}} className="img-fluid"/>
       </div>
-      <div className="col-lg-4 col-md-4 col-sm-12">
-        <img src="https://parametric-architecture.com/wp-content/uploads/2023/05/Tim-Fu-AI-3.jpg" alt="Portfolio item" style={{marginTop: '20px', borderRadius: '10px', transition: 'transform 0.3s ease'}} className="img-fluid"/>
+      <div className="col-lg-4 col-md-4 col-sm-12 pt-60">
+      <p>
+              "It essentially refers to a manner or style of expression,
+              encompassing various forms within art and more. Architecture, as
+              an artistic discipline, shares common principles with other forms
+              of art, such as the involvement of senses, consideration of
+              lifestyle, incorporation of visual elements, and attention to the
+              technical details."
+            </p>
       </div>
-      <div className="col-lg-4 col-md-4 col-sm-12">
-        <img src="https://parametric-architecture.com/wp-content/uploads/2023/05/Tim-Fu-AI-3.jpg" alt="Portfolio item" style={{marginTop: '20px', borderRadius: '10px', transition: 'transform 0.3s ease'}} className="img-fluid"/>
-      </div>
-      <div className="col-lg-4 col-md-4 col-sm-12">
-        <img src="https://parametric-architecture.com/wp-content/uploads/2023/05/Tim-Fu-AI-3.jpg" alt="Portfolio item" style={{marginTop: '20px', borderRadius: '10px', transition: 'transform 0.3s ease'}} className="img-fluid"/>
-      </div>
-      <div className="col-lg-4 col-md-4 col-sm-12">
-        <img src="https://parametric-architecture.com/wp-content/uploads/2023/05/Tim-Fu-AI-3.jpg" alt="Portfolio item" style={{marginTop: '20px', borderRadius: '10px', transition: 'transform 0.3s ease'}} className="img-fluid"/>
-      </div>
-      <div className="col-lg-4 col-md-4 col-sm-12">
-        <img src="https://parametric-architecture.com/wp-content/uploads/2023/05/Tim-Fu-AI-3.jpg" alt="Portfolio item" style={{marginTop: '20px', borderRadius: '10px', transition: 'transform 0.3s ease'}} className="img-fluid"/>
-      </div>
-      <div className="col-lg-4 col-md-4 col-sm-12">
-        <img src="https://parametric-architecture.com/wp-content/uploads/2023/05/Tim-Fu-AI-3.jpg" alt="Portfolio item" style={{marginTop: '20px', borderRadius: '10px', transition: 'transform 0.3s ease'}} className="img-fluid"/>
-      </div>
-      <div className="col-lg-4 col-md-4 col-sm-12">
-        <img src="https://parametric-architecture.com/wp-content/uploads/2023/05/Tim-Fu-AI-3.jpg" alt="Portfolio item" style={{marginTop: '20px', borderRadius: '10px', transition: 'transform 0.3s ease'}} className="img-fluid"/>
-      </div>
+      
     </div>
   </div>
 </section>
 
-<div className="mt-4">
+<div className="mt-50">
 <FunFact />
 </div>
 
@@ -262,7 +275,7 @@ const toggleAccordion = (index) => {
 </section>
 
 
-      <section className="similar-services-section pt-50 pb-70" style={{ backgroundColor: "#ffffff" }}>
+      {/* <section className="similar-services-section pt-50 pb-70" style={{ backgroundColor: "#ffffff" }}>
         <div className="container">
           <h3 className="text-center mb-5" style={{ color: "#000000" }}>Similar Services in Other Cities:</h3>
           <div className="text-center">
@@ -278,7 +291,7 @@ const toggleAccordion = (index) => {
             <Link to="/top-architect-in-ghaziabad">Architect in Ghaziabad</Link>.
           </div>
         </div>
-      </section>
+      </section> */}
   
 <Footer/>
   
@@ -311,21 +324,21 @@ const styles = {
       question: "Question 4: Is parking available on-site?",
       answer: "Answer 4: Yes, we provide parking facilities for our guests.",
     },
-    {
-      question: "Question 5: Are pets allowed in the accommodation?",
-      answer: "Answer 5: Unfortunately, we do not allow pets in our accommodation.",
-    },
-    {
-      question: "Question 6: What is the check-in/check-out time?",
-      answer: "Answer 6: Our standard check-in time is 3:00 PM, and check-out time is 12:00 PM.",
-    },
-    {
-      question: "Question 7: Do you offer room service?",
-      answer: "Answer 7: Yes, we provide room service for our guests during specified hours.",
-    },
-    {
-      question: "Question 8: Is there a fitness center available?",
-      answer: "Answer 8: Yes, we have a fitness center available for guests to use.",
-    },
+    // {
+    //   question: "Question 5: Are pets allowed in the accommodation?",
+    //   answer: "Answer 5: Unfortunately, we do not allow pets in our accommodation.",
+    // },
+    // {
+    //   question: "Question 6: What is the check-in/check-out time?",
+    //   answer: "Answer 6: Our standard check-in time is 3:00 PM, and check-out time is 12:00 PM.",
+    // },
+    // {
+    //   question: "Question 7: Do you offer room service?",
+    //   answer: "Answer 7: Yes, we provide room service for our guests during specified hours.",
+    // },
+    // {
+    //   question: "Question 8: Is there a fitness center available?",
+    //   answer: "Answer 8: Yes, we have a fitness center available for guests to use.",
+    // },
   ];
   
