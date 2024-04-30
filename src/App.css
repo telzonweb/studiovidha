@@ -2,6 +2,29 @@
   text-align: center;
 }
 
+.testimonial-slider-item {
+  border: 2px solid #ffffff; /* White border */
+  border-radius: 10px; /* Border radius */
+  padding: 20px; /* Padding */
+  margin-bottom: 20px; /* Bottom margin */
+}
+
+.testimonial {
+  width: 48%; /* Adjust width */
+  display: inline-block; /* Display inline */
+}
+
+.testimonial-text {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.testimonial-author {
+  font-style: italic;
+  margin-top: 10px;
+}
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
