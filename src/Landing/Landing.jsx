@@ -6,8 +6,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-
-
 // import Services from "../api/Services";
 import Bg from "../images/services/service-bg.jpg";
 import Footer from "../components/footer/Footer";
@@ -210,7 +208,7 @@ const toggleAccordion = (index) => {
     >
           <div className="section-title mb-75 text-center">
         <h2>
-          Our <span className="thin">Our Services</span>
+          <span className="thin">Our Services</span>
         </h2>
      
       </div>
@@ -231,7 +229,7 @@ const toggleAccordion = (index) => {
                     onClick={ClickHandler}
                     to={`/service-single/`}
                   >
-Residential Design
+                    Residential Design
                   </Link>
                 </h3>
                 <p>Create your dream home with bespoke designs that blend functionality with personal style.</p>
@@ -251,7 +249,7 @@ Residential Design
                     onClick={ClickHandler}
                     to={`/service-single/`}
                   >
-Commercial Design
+                    Commercial Design
                   </Link>
                 </h3>
                 <p>Boost your business's brand identity with interiors that impress and inspire.</p>
@@ -271,7 +269,7 @@ Commercial Design
                     onClick={ClickHandler}
                     to={`/service-single/`}
                   >
-Custom Furniture
+                    Custom Furniture
                   </Link>
                 </h3>
                 <p>From concept to creation, get custom furniture that perfectly fits your space.</p>
