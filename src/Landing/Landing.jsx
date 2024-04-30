@@ -1,14 +1,21 @@
 import React, { Fragment, useState } from "react";
-import Header from "../Landing-page/header/index";
+import Header from "../Landing/header/index";
 import PageTitle from "../components/pagetitle/PageTitle";
 import { Link } from "react-router-dom";
-import Services from "../api/Services";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+// import Services from "../api/Services";
 import Bg from "../images/services/service-bg.jpg";
 import Footer from "../components/footer/Footer";
 import { useParams } from "react-router-dom"; // Import useParams
 import { Helmet } from "react-helmet";
 import FunFact from "../components/FunFact";
 import { BASEURL } from "../Constant";
+import Navbar from "../components/Navbar/Navbar";
+import MobileMenu from "../components/MobileMenu/MobileMenu";
+import Services from "../api/Services";
 const NewLanding = () => {
   const { city } = useParams(); // Use useParams hook to get city parameter
   console.log(city);
@@ -17,6 +24,26 @@ const NewLanding = () => {
     setOpenAccordion(openAccordion === index ? null : index);
   };
   const [scroll, setScroll] = useState(0);
+  const testimonialSliderSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    pauseOnHover: true,
+    cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 768, // Adjust breakpoint according to your design
+        settings: {
+          slidesToShow: 1, // Display 2 items at a time on desktop
+        },
+      },
+    ],
+  };
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -43,6 +70,8 @@ const NewLanding = () => {
       console.log(error);
     }
   };
+
+  const [menuActive, setMenuState] = useState(false);
 
   const handleScroll = () => setScroll(document.documentElement.scrollTop);
 
@@ -130,7 +159,7 @@ const NewLanding = () => {
                       name="number"
                       className="form-control rounded"
                       placeholder="Your Number"
-                      value={formData.subject}
+                      value={formData.number}
                       onChange={handleInputChange}
                     />
                   </div>
@@ -175,59 +204,94 @@ const NewLanding = () => {
             fontWeight: "bold",
           }}
         >
-          Welcome to StudioVidha
+          About Studio Vidha
         </h1>
         <p style={{ fontSize: "1.2rem", lineHeight: "1.6", color: "#333" }}>
-          Explore the wonders of our website, where innovation meets elegance.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut
-          perspiciatis unde omnis iste natus error sit voluptatem accusantium
-          doloremque laudantium.
+          Studio Vidha brings over a decade of design expertise to your
+          doorstep. Specializing in both residential and commercial spaces, we
+          tailor our designs to reflect your unique tastes and lifestyle. Our
+          commitment to quality and client satisfaction makes us the preferred
+          choice in Maharashtra.
         </p>
       </div>
 
       {/* service section */}
 
-      <section
-        className="services-section pt-90 rpt-100 pb-70"
-        style={{ backgroundImage: `url(${Bg})` }}
-      >
-        <div className="section-title mb-75 text-center">
-          <h2>
-            Our <span className="thin">Services</span>
-          </h2>
-        </div>
-        <div className="container">
-          <div className="row">
-            {Services.slice(0, 3).map((service, Sitem) => (
-              <div className="col-lg-4 col-md-4 col-10" key={Sitem}>
+      <section>
+        <section
+          className="services-section pt-90 rpt-100 pb-70"
+          style={{ backgroundImage: `url(${Bg})` }}
+        >
+          <div className="section-title mb-75 text-center">
+            <h2>
+              <span className="thin">Our Services</span>
+            </h2>
+          </div>
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-4 col-md-4 col-10">
                 <div className="service-item">
-                  <span className="number">0{service.Id}</span>
+                  <span className="number">01</span>
                   <img
                     height="120px"
                     width="120px"
-                    src={`../${service.sImg}`}
+                    src={`../images/vector/arch_vector.jpg`}
                     alt="Icon"
                   />
                   <h3>
-                    <Link
-                      onClick={ClickHandler}
-                      to={`/service-single/${service.slug}`}
-                    >
-                      {service.sTitle}
+                    <Link onClick={ClickHandler} to={`/service-single/`}>
+                      Residential Design
                     </Link>
                   </h3>
-                  <p>{service.description}</p>
-                  <h4>Services</h4>
-                  <ul>
-                    {service.IncludedServices.map((item) => (
-                      <li>{item}</li>
-                    ))}
-                  </ul>
+                  <p>
+                    Create your dream home with bespoke designs that blend
+                    functionality with personal style.
+                  </p>
                 </div>
               </div>
-            ))}
+              <div className="col-lg-4 col-md-4 col-10">
+                <div className="service-item">
+                  <span className="number">02</span>
+                  <img
+                    height="120px"
+                    width="120px"
+                    src={`../images/vector/int_vector.jpg`}
+                    alt="Icon"
+                  />
+                  <h3>
+                    <Link onClick={ClickHandler} to={`/service-single/`}>
+                      Commercial Design
+                    </Link>
+                  </h3>
+                  <p>
+                    Boost your business's brand identity with interiors that
+                    impress and inspire.
+                  </p>
+                </div>
+              </div>
+              <div className="col-lg-4 col-md-4 col-10">
+                <div className="service-item">
+                  <span className="number">03</span>
+                  <img
+                    height="120px"
+                    width="120px"
+                    src={`../images/vector/land_vector.jpg`}
+                    alt="Icon"
+                  />
+                  <h3>
+                    <Link onClick={ClickHandler} to={`/service-single/`}>
+                      Custom Furniture
+                    </Link>
+                  </h3>
+                  <p>
+                    From concept to creation, get custom furniture that
+                    perfectly fits your space.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
+        </section>
       </section>
 
       <section className="portfolio-section">
@@ -348,6 +412,23 @@ const NewLanding = () => {
         </div>
       </section>
 
+      <section className="ml-4 mr-4">
+        <h2 className="text-center mb-5 mt-50" style={{ color: "#000000" }}>
+          Testimonials
+        </h2>
+        <Slider {...testimonialSliderSettings}>
+          {testimonials.map((testimonial, index) => (
+            <div key={index}>
+              <div className="testimonial-item">
+                <p className="comment">{testimonial.comment}</p>
+                <p className="name">{testimonial.name}</p>
+                <p className="designation">{testimonial.designation}</p>
+              </div>
+            </div>
+          ))}
+        </Slider>
+      </section>
+
       {/* <section className="similar-services-section pt-50 pb-70" style={{ backgroundColor: "#ffffff" }}>
         <div className="container">
           <h3 className="text-center mb-5" style={{ color: "#000000" }}>Similar Services in Other Cities:</h3>
@@ -414,4 +495,32 @@ const FAQData = [
   //   question: "Question 8: Is there a fitness center available?",
   //   answer: "Answer 8: Yes, we have a fitness center available for guests to use.",
   // },
+];
+
+const testimonials = [
+  {
+    name: "John Doe",
+    designation: "CEO, Company Name",
+    comment:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
+  },
+  {
+    name: "Jane Smith",
+    designation: "Creative Director, Another Company",
+    comment:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
+  },
+  {
+    name: "John Doe",
+    designation: "CEO, Company Name",
+    comment:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
+  },
+  {
+    name: "Jane Smith",
+    designation: "Creative Director, Another Company",
+    comment:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
+  },
+  // Add more testimonials as needed
 ];
