@@ -195,7 +195,7 @@ const NewLanding = () => {
         </div>
       </section>
 
-      <div className="container py-5 text-center">
+      <div className="container py-4 text-center">
         <h1
           style={{
             color: "#rgb(175 150 76)",
