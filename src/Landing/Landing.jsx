@@ -130,7 +130,7 @@ const NewLanding = () => {
               <div className="card p-4 w-100">
                 <h2 className="text-center mb-4">Contact Us</h2>
                 <h4 className="text-center mb-4">
-                  Book Free Architech Consultation Today!
+                  Book Free Design Consultation Today!
                 </h4>
                 <form onSubmit={handleSubmit} style={styles.contactForm}>
                   <div className="form-group">
@@ -178,7 +178,7 @@ const NewLanding = () => {
                       style={{ backgroundColor: "#ca9c6a", border: "none" }}
                       className="btn btn-primary mb-4"
                     >
-                      Get Free Architech Consultation
+                      Get Free Design Consultation Today!
                     </button>
                     <div className="d-flex align-items-center justify-content-center">
                       <i
@@ -240,12 +240,11 @@ const NewLanding = () => {
                   />
                   <h3>
                     <Link onClick={ClickHandler} to={`/service-single/`}>
-                      Residential Design
+                    Architecture Design
                     </Link>
                   </h3>
                   <p>
-                    Create your dream home with bespoke designs that blend
-                    functionality with personal style.
+                  Our Architecture service is dedicated to seamlessly integrating functionality and aesthetics into every space we craft.
                   </p>
                 </div>
               </div>
@@ -260,12 +259,14 @@ const NewLanding = () => {
                   />
                   <h3>
                     <Link onClick={ClickHandler} to={`/service-single/`}>
-                      Commercial Design
+                    Interior Design
                     </Link>
                   </h3>
                   <p>
-                    Boost your business's brand identity with interiors that
-                    impress and inspire.
+                  Experience our architectural firm’s epitome of interior 
+design excellence. Our effectively created interior 
+design services elevate spaces with an optimal blend of 
+elegance to functionality.
                   </p>
                 </div>
               </div>
@@ -280,12 +281,13 @@ const NewLanding = () => {
                   />
                   <h3>
                     <Link onClick={ClickHandler} to={`/service-single/`}>
-                      Custom Furniture
+                    Landscape Design 
                     </Link>
                   </h3>
                   <p>
-                    From concept to creation, get custom furniture that
-                    perfectly fits your space.
+                  Transform your outdoor space into a breathtaking oasis 
+with our professional landscape design service.
+
                   </p>
                 </div>
               </div>
@@ -311,13 +313,14 @@ const NewLanding = () => {
               />
             </div>
             <div className="col-lg-4 col-md-4 col-sm- pt-60">
+              <h4>Classy Living Spaces</h4>
               <p>
-                "It essentially refers to a manner or style of expression,
-                encompassing various forms within art and more. Architecture, as
-                an artistic discipline, shares common principles with other
-                forms of art, such as the involvement of senses, consideration
-                of lifestyle, incorporation of visual elements, and attention to
-                the technical details."
+                Elevate your home to new heights of sophistication and 
+style with our classy living spaces design service. From 
+luxurious lounges to elegant entertainment areas, our 
+expert designers specialize in creating refined and inviting 
+environments that exude timeless charm and effortless 
+glamour.
               </p>
             </div>
             <div className="col-lg-4 col-md-4 col-sm-12">
@@ -333,13 +336,16 @@ const NewLanding = () => {
               />
             </div>
             <div className="col-lg-4 col-md-4 col-sm-12 pt-60">
+            <h4>Modern Kitchen Areas</h4>
               <p>
-                "It essentially refers to a manner or style of expression,
-                encompassing various forms within art and more. Architecture, as
-                an artistic discipline, shares common principles with other
-                forms of art, such as the involvement of senses, consideration
-                of lifestyle, incorporation of visual elements, and attention to
-                the technical details."
+              Experience the perfect blend of style, functionality, and 
+innovation with our modern kitchen designs. Our expert 
+designers specialize in creating sleek and sophisticated 
+culinary spaces that are as beautiful as they are practical, 
+redefining the heart of your 
+home with cutting-edge design and state-of-the-art 
+amenities.
+
               </p>
             </div>
             <div className="col-lg-4 col-md-4 col-sm-12" alt="Portfolio item">
@@ -355,13 +361,15 @@ const NewLanding = () => {
               />
             </div>
             <div className="col-lg-4 col-md-4 col-sm-12 pt-60">
+            <h4>Cozy Bedroom Designs</h4>
               <p>
-                "It essentially refers to a manner or style of expression,
-                encompassing various forms within art and more. Architecture, as
-                an artistic discipline, shares common principles with other
-                forms of art, such as the involvement of senses, consideration
-                of lifestyle, incorporation of visual elements, and attention to
-                the technical details."
+                Create a warm and inviting retreat where you can 
+escape the stresses of the day and unwind in comfort with 
+our cozy bedroom designs. Our expert designers 
+specialize in crafting intimate and snug spaces that 
+envelop you in a sense of serenity and relaxation, bringing 
+a touch of comfort and coziness to every corner of your 
+bedroom.
               </p>
             </div>
           </div>
@@ -462,27 +470,27 @@ const styles = {
 };
 const FAQData = [
   {
-    question: "Question 1: What types of accommodation do you offer?",
+    question: "Question 1: What Type of Services do you offer?",
     answer:
-      "Answer 1: We offer various types of accommodation including single rooms, double rooms, suites, and dormitories.",
+      "Answer 1: We provide a comprehensive range of services spanning from conceptual design to execution in Architecture, Interior Design, and Landscape Design.",
   },
   {
-    question: "Question 2: What amenities are included with the accommodation?",
+    question: "Question 2: How do you deal with client’s specific needs and requirements?",
     answer:
-      "Answer 2: Our accommodation comes with amenities such as free Wi-Fi, complimentary breakfast, air conditioning, and 24/7 security.",
+      "Answer 2: We make it a point to meet with our clients directly to grasp their needs regarding a specific area. We are a believer for including our clients from the initial phases of the project.",
   },
   {
-    question: "Question 3: Do you provide laundry services?",
-    answer: "Answer 3: Yes, we offer laundry services for our guests.",
+    question: "Question 3: How do you handle project constraints such as budget and timeline?",
+    answer: "Answer 3: We ensure optimal budget utilization by employing high-quality materials, supported by a proficient team of vendors who guarantee timely completion of every task.",
   },
   {
-    question: "Question 4: Is parking available on-site?",
-    answer: "Answer 4: Yes, we provide parking facilities for our guests.",
+    question: "Question 4: What sets your firm apart from others offering similar services?",
+    answer: "Answer 4:We offer top-tier concepts and ensure their execution aligns precisely with your envisioned and promised outcomes.",
   },
-  // {
-  //   question: "Question 5: Are pets allowed in the accommodation?",
-  //   answer: "Answer 5: Unfortunately, we do not allow pets in our accommodation.",
-  // },
+  {
+    question: "Question 5: What ongoing support or services do you provide after the project is completed?",
+    answer: "Answer 5: We extend post-execution services, including vendor provision for maintenance and consultation wherever necessary, within the scope of our work.",
+  },
   // {
   //   question: "Question 6: What is the check-in/check-out time?",
   //   answer: "Answer 6: Our standard check-in time is 3:00 PM, and check-out time is 12:00 PM.",
@@ -499,28 +507,28 @@ const FAQData = [
 
 const testimonials = [
   {
-    name: "John Doe",
-    designation: "CEO, Company Name",
+    name: "Mr. Pankaj Gupta",
+    // designation: "CEO, Company Name",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
+      "It's good knowledge and valuable service with very affordable cost.",
   },
   {
-    name: "Jane Smith",
-    designation: "Creative Director, Another Company",
+    name: "Mr. Nilesh Dube",
+    // designation: "Creative Director, Another Company",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
+      "Extremely pleased with the services and expertise provided for my home. Keep up the good work.",
   },
   {
-    name: "John Doe",
-    designation: "CEO, Company Name",
+    name: "Miss Yamin",
+    // designation: "CEO, Company Name",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
+      "Most promising architectural firm. They will give your house a feeling of Home with their skills. Highly recommended!",
   },
-  {
-    name: "Jane Smith",
-    designation: "Creative Director, Another Company",
-    comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
-  },
+  // {
+  //   name: "Jane Smith",
+  //   designation: "Creative Director, Another Company",
+  //   comment:
+  //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
+  // },
   // Add more testimonials as needed
 ];
